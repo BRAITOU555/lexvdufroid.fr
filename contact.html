@@ -7,7 +7,7 @@
     <meta name="description" content="Contact Le XV du Froid pour dépannage climatisation, installation, entretien ou chauffage. Demande de devis gratuit et rappel rapide." />
     <link rel="icon" type="image/png" href="images/favicon-32.png" />
     <link rel="apple-touch-icon" href="images/favicon-180.png" />
-    <link rel="stylesheet" href="styles.css?v=site-finition-1" />
+    <link rel="stylesheet" href="styles.css?v=contact-lead-1" />
   </head>
   <body>
     <header class="site-header">
@@ -79,21 +79,60 @@
                 <p>Pour une installation ou un entretien, le formulaire permet de préciser votre besoin afin de préparer une réponse plus complète.</p>
               </article>
             </div>
-            <form class="lp-form">
-              <label>Nom<input type="text" name="nom" placeholder="Votre nom" /></label>
-              <label>Téléphone<input type="tel" name="telephone" placeholder="07 57 83 26 26" /></label>
-              <label>Email<input type="email" name="email" placeholder="votre@email.fr" /></label>
-              <label>Type de demande
-                <select name="demande">
-                  <option>Dépannage climatisation</option>
-                  <option>Installation climatisation</option>
-                  <option>Entretien climatisation</option>
-                  <option>Chauffage</option>
-                  <option>Autre demande</option>
-                </select>
-              </label>
-              <label>Message<textarea name="message" rows="6" placeholder="Décrivez votre demande"></textarea></label>
-              <a class="btn btn-red" href="mailto:contact@lexvdufroid.fr">Envoyer la demande</a>
+            <form class="lp-form lead-form" action="https://formsubmit.co/contact@lexvdufroid.fr" method="POST">
+              <input type="hidden" name="_subject" value="Nouvelle demande" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://lexvdufroid.fr/merci.html" />
+              <input type="hidden" name="_autoresponse" value="Bonjour, nous avons bien reçu votre demande pour Le XV du Froid. Merci pour votre message. Nous allons reprendre les informations envoyées et vous recontacter rapidement par téléphone ou par email. À bientôt, Le XV du Froid." />
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
+
+              <div class="lp-form-grid">
+                <label>Nom et prénom<input type="text" name="Nom et prénom" placeholder="Votre nom" autocomplete="name" required /></label>
+                <label>Téléphone<input type="tel" name="Téléphone" placeholder="07 57 83 26 26" autocomplete="tel" required /></label>
+                <label>Email<input type="email" name="email" placeholder="votre@email.fr" autocomplete="email" required /></label>
+                <label>Ville d’intervention<input type="text" name="Ville" placeholder="Paris, Boulogne, Créteil..." autocomplete="address-level2" required /></label>
+                <label>Code postal<input type="text" name="Code postal" placeholder="75001" inputmode="numeric" autocomplete="postal-code" /></label>
+                <label>Type de demande
+                  <select name="Type de demande" required>
+                    <option value="">Choisir</option>
+                    <option>Dépannage climatisation</option>
+                    <option>Installation climatisation</option>
+                    <option>Entretien climatisation</option>
+                    <option>Mise en service</option>
+                    <option>Remplacement climatisation</option>
+                    <option>Autre demande</option>
+                  </select>
+                </label>
+                <label>Type de bien
+                  <select name="Type de bien" required>
+                    <option value="">Choisir</option>
+                    <option>Appartement</option>
+                    <option>Maison</option>
+                    <option>Commerce</option>
+                    <option>Bureau</option>
+                    <option>Restaurant ou local professionnel</option>
+                    <option>Autre</option>
+                  </select>
+                </label>
+                <label>Délai souhaité
+                  <select name="Délai souhaité" required>
+                    <option value="">Choisir</option>
+                    <option>Le plus tôt possible</option>
+                    <option>Cette semaine</option>
+                    <option>Ce mois-ci</option>
+                    <option>Je prépare un projet</option>
+                  </select>
+                </label>
+                <label>Marque / modèle si connu<input type="text" name="Marque ou modèle" placeholder="Daikin, Mitsubishi, Atlantic..." /></label>
+                <label>Nombre d’unités<input type="text" name="Nombre d’unités" placeholder="1 unité intérieure, 2 splits..." /></label>
+                <label class="lp-form-full">Message<textarea name="Message" rows="6" placeholder="Décrivez le besoin, les symptômes, la surface, les contraintes d’accès ou les photos que vous pouvez envoyer ensuite." required></textarea></label>
+              </div>
+
+              <p class="form-note">
+                Après l’envoi, vous recevez un email de confirmation. Nous recevons votre demande sous forme de lead clair avec vos coordonnées et les détails de l’intervention.
+              </p>
+              <button class="btn btn-red" type="submit">Envoyer ma demande</button>
             </form>
           </div>
           <aside class="lp-contact-card">
