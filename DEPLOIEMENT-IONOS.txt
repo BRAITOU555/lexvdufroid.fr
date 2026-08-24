@@ -1,0 +1,31 @@
+LE XV DU FROID - MISE EN LIGNE IONOS
+
+Domaine :
+https://lexvdufroid.fr
+
+Fichiers a envoyer chez IONOS :
+- tout le contenu du dossier public_html contenu dans le ZIP le-xv-du-froid-ionos.zip
+- le fichier .htaccess doit rester a la racine du site
+- index.html doit etre a la racine du site
+
+Emplacement habituel IONOS :
+- espace web / racine du domaine / ou dossier assigne au domaine
+- selon le compte : /htdocs, /web, /public_html ou le dossier choisi dans l'interface IONOS
+
+DNS a verifier chez IONOS :
+- lexvdufroid.fr pointe vers l'hebergement web IONOS
+- www.lexvdufroid.fr pointe vers le meme site
+- certificat SSL actif
+
+Apres publication, tester :
+- https://lexvdufroid.fr/
+- https://www.lexvdufroid.fr/ doit rediriger vers https://lexvdufroid.fr/
+- http://lexvdufroid.fr/ doit rediriger vers https://lexvdufroid.fr/
+- https://lexvdufroid.fr/sitemap.xml
+- https://lexvdufroid.fr/robots.txt
+- https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html
+- https://lexvdufroid.fr/zones/paris-2.html doit rediriger vers /zones/installation-climatisation-paris-2e.html
+
+Google Search Console :
+- ajouter la propriete lexvdufroid.fr
+- envoyer le sitemap : https://lexvdufroid.fr/sitemap.xml

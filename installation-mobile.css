@@ -1,0 +1,202 @@
+@media (max-width: 980px) {
+  .installation-page .lp-hero {
+    padding: 18px 0 22px !important;
+    color: #132235 !important;
+    background:
+      radial-gradient(420px 190px at 100% 0%, rgba(52, 109, 157, 0.12), transparent 65%),
+      linear-gradient(180deg, #ffffff 0%, #f3f7fb 100%) !important;
+  }
+
+  .installation-page .lp-hero-split {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+  }
+
+  .installation-page .lp-hero-copy {
+    order: 1 !important;
+  }
+
+  .installation-page .lp-hero-media {
+    order: 2 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border: 1px solid rgba(19, 34, 53, 0.1) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 12px 26px rgba(19, 34, 53, 0.12) !important;
+  }
+
+  .installation-page .lp-hero-media img {
+    width: 100% !important;
+    max-height: 165px !important;
+    aspect-ratio: 16 / 8.5 !important;
+    object-fit: cover !important;
+    object-position: center 38% !important;
+  }
+
+  .installation-page .lp-brand-kicker {
+    display: none !important;
+  }
+
+  .installation-page .lp-slogan {
+    margin: 0 0 9px !important;
+    padding-left: 9px !important;
+    color: #254762 !important;
+    font-size: 0.72rem !important;
+    line-height: 1.25 !important;
+    border-left: 2px solid #d7352a !important;
+  }
+
+  .installation-page .lp-eyebrow {
+    margin-bottom: 7px !important;
+    font-size: 0.58rem !important;
+    color: #d7352a !important;
+  }
+
+  .installation-page .lp-hero h1 {
+    max-width: 340px !important;
+    margin-bottom: 9px !important;
+    color: #132235 !important;
+    font-size: 1.28rem !important;
+    line-height: 1.1 !important;
+    letter-spacing: -0.01em !important;
+    text-shadow: none !important;
+  }
+
+  .installation-page .lp-hero-lead {
+    max-width: 360px !important;
+    margin-bottom: 12px !important;
+    color: #44566a !important;
+    font-size: 0.82rem !important;
+    line-height: 1.44 !important;
+  }
+
+  .installation-page .lp-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .installation-page .lp-hero .btn-red {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 40px !important;
+    border-color: transparent !important;
+  }
+
+  .installation-page .lp-hero .btn-outline-dark {
+    display: none !important;
+  }
+
+  .installation-page .lp-hero-points {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 7px !important;
+    margin-top: 10px !important;
+  }
+
+  .installation-page .lp-hero-points li,
+  .installation-page .lp-hero-points li:nth-child(2) {
+    display: block !important;
+    min-height: 30px !important;
+    padding: 7px 8px 7px 27px !important;
+    color: #18344d !important;
+    font-size: 0.66rem !important;
+    line-height: 1.2 !important;
+    background: #ffffff !important;
+    border: 1px solid rgba(19, 34, 53, 0.1) !important;
+    border-radius: 9px !important;
+  }
+
+  .installation-page .lp-proof-cards {
+    margin-top: 0 !important;
+    padding: 12px 0 6px !important;
+    background: #ffffff !important;
+  }
+
+  .installation-page .lp-proof-grid,
+  .installation-page .lp-option-grid,
+  .installation-page .lp-stats-grid,
+  .installation-page .zone-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 9px !important;
+    width: calc(100% - 32px) !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .installation-page .lp-proof-grid article {
+    min-height: 92px !important;
+    padding: 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .installation-page .lp-option-card {
+    overflow: hidden !important;
+    border-radius: 12px !important;
+  }
+
+  .installation-page .lp-option-card img {
+    height: 82px !important;
+    object-fit: cover !important;
+  }
+
+  .installation-page .lp-option-body {
+    padding: 10px !important;
+  }
+
+  .installation-page .lp-option-body h3,
+  .installation-page .zone-card strong {
+    font-size: 0.78rem !important;
+    line-height: 1.18 !important;
+  }
+
+  .installation-page .lp-option-body p,
+  .installation-page .zone-card p {
+    font-size: 0.66rem !important;
+    line-height: 1.3 !important;
+  }
+
+  .installation-page .lp-arrow {
+    display: none !important;
+  }
+
+  .installation-page .lp-section {
+    padding: 42px 0 !important;
+  }
+
+  .installation-page .lp-head {
+    margin-bottom: 18px !important;
+  }
+
+  .installation-page .lp-head h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .installation-page .lp-stats-band {
+    padding: 22px 0 !important;
+  }
+
+  .installation-page .lp-stats-grid article,
+  .installation-page .zone-card {
+    min-height: auto !important;
+    padding: 12px 10px !important;
+    border-radius: 12px !important;
+  }
+
+  .installation-page .lp-service-band {
+    width: calc(100% - 32px) !important;
+    margin-bottom: 18px !important;
+    border-radius: 14px !important;
+  }
+
+  .installation-page .lp-service-band img {
+    min-height: 145px !important;
+    max-height: 165px !important;
+  }
+
+  .installation-page .lp-service-text {
+    padding: 20px 16px 22px !important;
+  }
+}
