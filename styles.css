@@ -4950,6 +4950,33 @@ h1 {
   cursor: pointer;
 }
 
+.lp-form button.btn:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.form-success,
+.form-error {
+  margin: 0;
+  padding: 13px 14px;
+  font-size: 0.88rem;
+  font-weight: 850;
+  line-height: 1.45;
+  border-radius: 10px;
+}
+
+.form-success {
+  color: #0f5132;
+  background: #eaf7ef;
+  border: 1px solid rgba(15, 81, 50, 0.18);
+}
+
+.form-error {
+  color: #842029;
+  background: #fff1f1;
+  border: 1px solid rgba(132, 32, 41, 0.18);
+}
+
 /* ---------- Blog ---------- */
 
 .blog-section {

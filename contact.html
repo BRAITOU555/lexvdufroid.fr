@@ -78,11 +78,10 @@
                 <p>Pour une installation ou un entretien, le formulaire permet de préciser votre besoin afin de préparer une réponse plus complète.</p>
               </article>
             </div>
-            <form class="lp-form" action="https://formsubmit.co/d3cdabac3858cbe382322f099de2dc6b" method="POST">
+            <form class="lp-form" id="contact-form" action="https://formsubmit.co/d3cdabac3858cbe382322f099de2dc6b" method="POST">
               <input type="hidden" name="_subject" value="Nouvelle demande" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://lexvdufroid.fr/merci.html" />
               <input type="hidden" name="_autoresponse" value="Bonjour, nous avons bien reçu votre demande. Merci pour votre message. L’équipe Le XV du Froid revient vers vous rapidement par téléphone ou par email. À bientôt, Le XV du Froid." />
               <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
               <label>Nom<input type="text" name="Nom" placeholder="Votre nom" required /></label>
@@ -99,7 +98,9 @@
                 </select>
               </label>
               <label>Message<textarea name="Message" rows="6" placeholder="Décrivez votre demande" required></textarea></label>
-              <button class="btn btn-red" type="submit">Envoyer la demande</button>
+              <p class="form-success" id="form-success" hidden>Votre demande a bien été envoyée. Vous serez contacté rapidement.</p>
+              <p class="form-error" id="form-error" hidden>Le message n’a pas pu partir. Appelez-nous directement au 07 57 83 26 26.</p>
+              <button class="btn btn-red" id="contact-submit" type="submit">Envoyer la demande</button>
             </form>
           </div>
           <aside class="lp-contact-card">
@@ -175,5 +176,49 @@
       <span>☎</span>
       <strong>Appeler</strong>
     </a>
+    <script>
+      const contactForm = document.querySelector("#contact-form");
+      const contactSubmit = document.querySelector("#contact-submit");
+      const formSuccess = document.querySelector("#form-success");
+      const formError = document.querySelector("#form-error");
+
+      contactForm?.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        formSuccess.hidden = true;
+        formError.hidden = true;
+
+        if (!contactForm.reportValidity()) {
+          return;
+        }
+
+        const formData = new FormData(contactForm);
+        if (formData.get("_honey")) {
+          return;
+        }
+
+        contactSubmit.disabled = true;
+        contactSubmit.textContent = "Envoi en cours...";
+
+        try {
+          const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+          });
+
+          if (!response.ok) {
+            throw new Error("Formulaire non envoyé");
+          }
+
+          contactForm.reset();
+          formSuccess.hidden = false;
+        } catch (error) {
+          formError.hidden = false;
+        } finally {
+          contactSubmit.disabled = false;
+          contactSubmit.textContent = "Envoyer la demande";
+        }
+      });
+    </script>
   </body>
 </html>
