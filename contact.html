@@ -79,20 +79,19 @@
               </article>
             </div>
             <form class="lp-form lead-form" id="contact-form" action="https://formsubmit.co/d3cdabac3858cbe382322f099de2dc6b" method="POST">
-              <input type="hidden" name="_subject" value="Nouvelle demande" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_subject" value="Nouvelle demande - Le XV du Froid" />
+              <input type="hidden" name="_template" value="box" />
               <input type="hidden" name="_next" value="https://lexvdufroid.fr/merci.html" />
               <input type="hidden" name="_autoresponse" value="Bonjour, votre demande a bien été envoyée. Vous serez contacté rapidement. Le XV du Froid." />
               <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
 
               <div class="lp-form-grid">
-                <label>Nom et prénom<input type="text" name="Nom et prénom" placeholder="Votre nom" autocomplete="name" required /></label>
+                <label>Nom et prénom<input type="text" name="Client" placeholder="Votre nom" autocomplete="name" required /></label>
                 <label>Téléphone<input type="tel" name="Téléphone" placeholder="07 57 83 26 26" autocomplete="tel" required /></label>
                 <label>Email<input type="email" name="email" placeholder="votre@email.fr" autocomplete="email" required /></label>
                 <label>Ville d’intervention<input type="text" name="Ville" placeholder="Paris, Boulogne, Créteil..." autocomplete="address-level2" required /></label>
                 <label>Type de demande
-                  <select name="Type de demande" required>
+                  <select name="Besoin" required>
                     <option value="">Choisir</option>
                     <option>Dépannage climatisation</option>
                     <option>Installation climatisation</option>
@@ -103,7 +102,7 @@
                   </select>
                 </label>
                 <label>Type de bien
-                  <select name="Type de bien" required>
+                  <select name="Bien" required>
                     <option value="">Choisir</option>
                     <option>Appartement</option>
                     <option>Maison</option>
@@ -114,7 +113,7 @@
                   </select>
                 </label>
                 <label>Délai souhaité
-                  <select name="Délai souhaité" required>
+                  <select name="Délai" required>
                     <option value="">Choisir</option>
                     <option>Le plus tôt possible</option>
                     <option>Cette semaine</option>
@@ -122,8 +121,8 @@
                     <option>Je prépare un projet</option>
                   </select>
                 </label>
-                <label>Nombre d’unités<input type="text" name="Nombre d’unités" placeholder="1 unité intérieure, 2 splits..." /></label>
-                <label class="lp-form-full">Message<textarea name="Message" rows="6" placeholder="Décrivez le besoin, les symptômes, la surface, les contraintes d’accès ou les photos que vous pouvez envoyer ensuite." required></textarea></label>
+                <label>Nombre d’unités<input type="text" name="Unités" placeholder="1 unité intérieure, 2 splits..." /></label>
+                <label class="lp-form-full">Message<textarea name="Détails de la demande" rows="6" placeholder="Décrivez le besoin, les symptômes, la surface, les contraintes d’accès ou les photos que vous pouvez envoyer ensuite." required></textarea></label>
               </div>
 
               <p class="form-note">
