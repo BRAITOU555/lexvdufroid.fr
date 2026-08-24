@@ -2838,6 +2838,16 @@ h1 {
   letter-spacing: -0.01em;
 }
 
+.lp h2 + p,
+.lp h3 + p,
+.seo-panel h2 + p,
+.seo-panel h3 + p,
+.lp-head h2 + p,
+.lp-service-text h3 + p,
+.lp-contact-card h2 + p {
+  margin-top: 14px;
+}
+
 /* ---------- Hero ---------- */
 
 .lp-hero {
