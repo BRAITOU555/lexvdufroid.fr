@@ -4936,6 +4936,20 @@ h1 {
   margin-top: 4px;
 }
 
+.form-honey {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lp-form button.btn {
+  border: 0;
+  cursor: pointer;
+}
+
 /* ---------- Blog ---------- */
 
 .blog-section {

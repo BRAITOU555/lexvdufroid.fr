@@ -78,12 +78,17 @@
                 <p>Pour une installation ou un entretien, le formulaire permet de préciser votre besoin afin de préparer une réponse plus complète.</p>
               </article>
             </div>
-            <form class="lp-form">
-              <label>Nom<input type="text" name="nom" placeholder="Votre nom" /></label>
-              <label>Téléphone<input type="tel" name="telephone" placeholder="07 57 83 26 26" /></label>
-              <label>Email<input type="email" name="email" placeholder="votre@email.fr" /></label>
+            <form class="lp-form" action="https://formsubmit.co/d3cdabac3858cbe382322f099de2dc6b" method="POST">
+              <input type="hidden" name="_subject" value="Nouvelle demande" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://lexvdufroid.fr/merci.html" />
+              <input type="hidden" name="_autoresponse" value="Bonjour, votre demande a bien été envoyée. Vous serez contacté rapidement. Le XV du Froid." />
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
+              <label>Nom<input type="text" name="Nom" placeholder="Votre nom" required /></label>
+              <label>Téléphone<input type="tel" name="Téléphone" placeholder="07 57 83 26 26" required /></label>
+              <label>Email<input type="email" name="email" placeholder="votre@email.fr" required /></label>
               <label>Type de demande
-                <select name="demande">
+                <select name="Type de demande" required>
                   <option>Dépannage climatisation</option>
                   <option>Installation climatisation</option>
                   <option>Entretien climatisation</option>
@@ -92,8 +97,8 @@
                   <option>Autre demande</option>
                 </select>
               </label>
-              <label>Message<textarea name="message" rows="6" placeholder="Décrivez votre demande"></textarea></label>
-              <a class="btn btn-red" href="mailto:contact@lexvdufroid.fr">Envoyer la demande</a>
+              <label>Message<textarea name="Message" rows="6" placeholder="Décrivez votre demande" required></textarea></label>
+              <button class="btn btn-red" type="submit">Envoyer la demande</button>
             </form>
           </div>
           <aside class="lp-contact-card">
