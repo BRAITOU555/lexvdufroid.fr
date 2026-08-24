@@ -3178,36 +3178,58 @@ h1 {
 }
 
 .lp-brands-inner {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   align-items: center;
-  gap: 18px 34px;
+  gap: 28px 42px;
 }
 
 .lp-brands-label {
-  flex: 0 0 auto;
-  padding-right: 20px;
+  display: inline-flex;
+  margin: 0 0 10px;
   color: var(--red);
   font-size: 0.72rem;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  border-right: 1px solid var(--line);
+}
+
+.lp-brands-copy h2 {
+  max-width: 520px;
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.1vw, 1.95rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.lp-brands-copy p:not(.lp-brands-label) {
+  max-width: 540px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.62;
 }
 
 .lp-brands-grid {
-  display: flex;
-  flex: 1 1 auto;
-  flex-wrap: wrap;
-  gap: 12px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .lp-brands-grid span {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 12px;
   color: var(--blue-deep);
-  font-size: 1rem;
+  font-size: 0.86rem;
   font-weight: 800;
   letter-spacing: -0.01em;
-  opacity: 0.75;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 10px 22px rgba(7, 34, 64, 0.04);
 }
 
 /* ---------- Services : bandes alternées ---------- */
@@ -3786,14 +3808,13 @@ h1 {
   }
 
   .lp-brands-inner {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     align-items: flex-start;
-    gap: 14px;
+    gap: 18px;
   }
 
   .lp-brands-label {
     padding-right: 0;
-    border-right: none;
   }
 
   .lp-service-band {
@@ -3869,11 +3890,22 @@ h1 {
   }
 
   .lp-brands-grid {
-    gap: 10px 22px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
   }
 
   .lp-brands-grid span {
-    font-size: 0.88rem;
+    min-height: 38px;
+    padding: 8px 10px;
+    font-size: 0.78rem;
+  }
+
+  .lp-brands-copy h2 {
+    font-size: 1.18rem;
+  }
+
+  .lp-brands-copy p:not(.lp-brands-label) {
+    font-size: 0.84rem;
   }
 
   .lp-hero {
