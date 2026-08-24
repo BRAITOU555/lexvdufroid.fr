@@ -78,7 +78,7 @@
                 <p>Pour une installation ou un entretien, le formulaire permet de préciser votre besoin afin de préparer une réponse plus complète.</p>
               </article>
             </div>
-            <form class="lp-form lead-form" id="contact-form" data-email="contact@lexvdufroid.fr">
+            <form class="lp-form lead-form" id="contact-form" action="mailto:contact@lexvdufroid.fr" method="post" enctype="text/plain" data-email="contact@lexvdufroid.fr">
               <input type="text" name="site_web" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
 
               <div class="lp-form-grid">
@@ -127,7 +127,7 @@
               <p class="form-success" id="form-success" aria-live="polite" hidden>
                 Votre demande a bien été envoyée. Vous serez contacté rapidement.
               </p>
-              <button class="btn btn-red" type="submit">Envoyer ma demande</button>
+              <button class="btn btn-red" id="contact-send" type="button">Envoyer ma demande</button>
             </form>
           </div>
           <aside class="lp-contact-card">
@@ -206,9 +206,13 @@
     <script>
       const contactForm = document.querySelector("#contact-form");
       const formSuccess = document.querySelector("#form-success");
+      const contactSend = document.querySelector("#contact-send");
 
-      contactForm?.addEventListener("submit", (event) => {
-        event.preventDefault();
+      const sendContactRequest = () => {
+        if (!contactForm.reportValidity()) {
+          return;
+        }
+
         const data = new FormData(contactForm);
 
         if (data.get("site_web")) {
@@ -239,6 +243,13 @@
 
         formSuccess.hidden = false;
         contactForm.reset();
+      };
+
+      contactSend?.addEventListener("click", sendContactRequest);
+
+      contactForm?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        sendContactRequest();
       });
     </script>
   </body>
