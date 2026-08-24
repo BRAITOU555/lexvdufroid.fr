@@ -6563,116 +6563,40 @@ body {
   background: var(--red);
 }
 
-.zones-intro-section {
-  padding: 62px 0;
-  background: #ffffff;
-}
-
-.zones-intro-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 44px;
-  align-items: center;
-}
-
-.zones-intro-grid h2 {
-  max-width: 660px;
-  margin: 0 0 18px;
-  color: var(--ink);
-  font-size: clamp(1.55rem, 2.7vw, 2.4rem);
-  line-height: 1.1;
-}
-
-.zones-intro-grid p:not(.lp-eyebrow) {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.98rem;
-  line-height: 1.75;
-}
-
-.zones-intro-cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.zones-intro-cards article {
-  min-height: 170px;
-  padding: 22px;
-  background: #f8fbfe;
-  border: 1px solid rgba(19, 34, 53, 0.09);
-  border-radius: 14px;
-}
-
-.zones-intro-cards strong {
-  display: block;
-  margin-bottom: 10px;
-  color: var(--ink);
-  font-size: 1rem;
-}
-
-.zones-intro-cards span {
-  display: block;
-  color: var(--muted);
-  font-size: 0.86rem;
-  line-height: 1.55;
-}
-
 .zones-directory {
   background:
     radial-gradient(740px 280px at 100% 0%, rgba(52, 109, 157, 0.08), transparent 70%),
     linear-gradient(180deg, #ffffff 0%, #f5f8fb 100%);
 }
 
-.department-layout {
+.zones-simple-grid {
   display: grid;
-  gap: 26px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.department-card {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
+.zones-simple-card {
+  padding: 22px;
   background: #ffffff;
   border: 1px solid rgba(19, 34, 53, 0.1);
   border-radius: 14px;
   box-shadow: 0 12px 28px rgba(19, 34, 53, 0.06);
 }
 
-.department-card ul {
-  display: grid;
-  gap: 7px;
-  margin: 18px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.department-card li {
-  color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.38;
-}
-
-.department-card li::before {
-  margin-right: 7px;
-  color: #0b58aa;
-  content: "•";
-  font-weight: 900;
-}
-
-.department-card-featured {
-  padding: 28px;
+.zones-simple-card-main {
+  grid-column: 1 / -1;
+  padding: 26px;
   border-color: rgba(52, 109, 157, 0.22);
   box-shadow: 0 18px 42px rgba(19, 34, 53, 0.1);
 }
 
-.department-head {
+.zones-simple-head {
   display: flex;
   gap: 16px;
   align-items: flex-start;
 }
 
-.department-head span {
+.zones-simple-head span {
   display: grid;
   flex: 0 0 auto;
   width: 46px;
@@ -6685,41 +6609,32 @@ body {
   border-radius: 12px;
 }
 
-.department-card-featured .department-head span {
+.zones-simple-card-main .zones-simple-head span {
   background: var(--red);
 }
 
-.department-head h3,
-.department-head h4 {
+.zones-simple-head h3 {
   margin: 0 0 6px;
   color: var(--ink);
   font-size: 1.12rem;
   line-height: 1.15;
 }
 
-.department-head p {
+.zones-simple-head p {
   margin: 0;
   color: var(--muted);
   font-size: 0.84rem;
   line-height: 1.45;
 }
 
-.department-copy {
-  max-width: 940px;
-  margin: 18px 0 0;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.68;
-}
-
-.department-links {
+.zones-chip-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
   margin-top: 22px;
 }
 
-.department-links a {
+.zones-chip-grid a {
   display: flex;
   min-height: 38px;
   align-items: center;
@@ -6734,126 +6649,39 @@ body {
   border-radius: 9px;
 }
 
-.department-links a:hover {
+.zones-chip-grid a:hover {
   color: #ffffff;
   background: var(--blue);
 }
 
-.department-group {
-  display: grid;
-  gap: 14px;
-}
-
-.department-group-head {
-  display: flex;
-  gap: 20px;
-  align-items: end;
-  justify-content: space-between;
-}
-
-.department-group-head h3 {
-  margin: 8px 0 0;
-  color: var(--blue-dark);
-  font-size: 1.08rem;
-  font-weight: 950;
-}
-
-.department-group-head p {
-  max-width: 520px;
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.45;
-}
-
-.department-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.department-grid-four {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.department-note {
-  margin: 16px 0 0;
-  color: var(--muted);
-  font-size: 0.8rem;
-  line-height: 1.45;
-}
-
-.zones-local-section {
-  padding: 72px 0;
+.zones-check-section {
+  padding: 54px 0;
   color: #ffffff;
   background:
     radial-gradient(700px 280px at 10% 0%, rgba(84, 174, 255, 0.22), transparent 70%),
     linear-gradient(135deg, #0c2643 0%, #173a61 100%);
 }
 
-.zones-local-grid {
+.zones-check-card {
   display: grid;
-  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
-  gap: 42px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
   align-items: center;
 }
 
-.zones-local-grid h2 {
+.zones-check-card h2 {
   max-width: 620px;
   margin: 0 0 18px;
   color: #ffffff;
-  font-size: clamp(1.6rem, 2.8vw, 2.45rem);
+  font-size: clamp(1.45rem, 2.4vw, 2.15rem);
   line-height: 1.08;
 }
 
-.zones-local-grid p:not(.lp-eyebrow) {
+.zones-check-card p:not(.lp-eyebrow) {
   margin: 0;
   color: rgba(255, 255, 255, 0.76);
   font-size: 0.96rem;
   line-height: 1.72;
-}
-
-.zones-need-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.zones-need-grid a {
-  min-height: 170px;
-  padding: 22px;
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 14px;
-}
-
-.zones-need-grid a:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
-
-.zones-need-grid span {
-  display: inline-flex;
-  margin-bottom: 12px;
-  color: #8fd0ff;
-  font-size: 0.68rem;
-  font-weight: 950;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.zones-need-grid strong {
-  display: block;
-  margin-bottom: 8px;
-  color: #ffffff;
-  font-size: 1.02rem;
-}
-
-.zones-need-grid p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.74);
-  font-size: 0.84rem;
-  line-height: 1.52;
 }
 
 @media (max-width: 980px) {
@@ -6866,22 +6694,16 @@ body {
     max-width: 520px;
   }
 
-  .department-links {
+  .zones-chip-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .department-grid,
-  .department-grid-four {
+  .zones-simple-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .zones-intro-grid,
-  .zones-local-grid {
+  .zones-check-card {
     grid-template-columns: 1fr;
-  }
-
-  .zones-intro-cards {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -6920,107 +6742,55 @@ body {
     padding-top: 42px;
   }
 
-  .zones-intro-section,
-  .zones-local-section {
-    padding: 42px 0;
+  .zones-check-section {
+    padding: 38px 0;
   }
 
-  .zones-intro-grid,
-  .zones-local-grid {
-    gap: 18px;
+  .zones-check-card {
+    gap: 16px;
   }
 
-  .zones-intro-grid h2,
-  .zones-local-grid h2 {
+  .zones-check-card h2 {
     font-size: 1.35rem;
   }
 
-  .zones-intro-grid p:not(.lp-eyebrow),
-  .zones-local-grid p:not(.lp-eyebrow) {
+  .zones-check-card p:not(.lp-eyebrow) {
     font-size: 0.82rem;
     line-height: 1.58;
   }
 
-  .zones-intro-cards,
-  .zones-need-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 9px;
-  }
-
-  .zones-intro-cards article,
-  .zones-need-grid a {
-    min-height: 0;
+  .zones-simple-card,
+  .zones-simple-card-main {
     padding: 14px;
     border-radius: 12px;
   }
 
-  .zones-intro-cards strong,
-  .zones-need-grid strong {
-    font-size: 0.82rem;
-  }
-
-  .zones-intro-cards span,
-  .zones-need-grid p {
-    font-size: 0.7rem;
-    line-height: 1.45;
-  }
-
-  .zones-need-grid span {
-    margin-bottom: 8px;
-    font-size: 0.58rem;
-  }
-
-  .department-card,
-  .department-card-featured {
-    padding: 14px;
-    border-radius: 12px;
-  }
-
-  .department-head {
+  .zones-simple-head {
     gap: 11px;
   }
 
-  .department-head span {
+  .zones-simple-head span {
     width: 38px;
     height: 38px;
     border-radius: 10px;
     font-size: 0.74rem;
   }
 
-  .department-head h3,
-  .department-head h4 {
+  .zones-simple-head h3 {
     font-size: 0.92rem;
   }
 
-  .department-head p {
+  .zones-simple-head p {
     font-size: 0.72rem;
     line-height: 1.35;
   }
 
-  .department-copy,
-  .department-note,
-  .department-card li,
-  .department-group-head p {
-    font-size: 0.7rem;
-    line-height: 1.42;
-  }
-
-  .department-group-head {
-    display: grid;
-    gap: 5px;
-  }
-
-  .department-group-head h3 {
-    font-size: 0.94rem;
-  }
-
-  .department-links,
-  .department-grid,
-  .department-grid-four {
+  .zones-simple-grid,
+  .zones-chip-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .department-links a {
+  .zones-chip-grid a {
     min-height: 34px;
     font-size: 0.68rem;
   }
