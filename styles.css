@@ -4242,6 +4242,162 @@ h1 {
   line-height: 1.55;
 }
 
+/* ---------- Depannage : bloc pannes frequentes ---------- */
+
+.breakdown-section {
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8fb 100%);
+}
+
+.breakdown-head {
+  max-width: 760px;
+}
+
+.breakdown-head p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.breakdown-panel {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) 1.18fr;
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 28px;
+  padding: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(19, 34, 53, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 18px 46px rgba(19, 34, 53, 0.08);
+}
+
+.breakdown-visual {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 14px;
+  background: #0e2745;
+}
+
+.breakdown-visual::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(6, 20, 40, 0.04) 35%, rgba(6, 20, 40, 0.82) 100%);
+}
+
+.breakdown-visual img {
+  width: 100%;
+  height: 100%;
+  min-height: 430px;
+  object-fit: cover;
+}
+
+.breakdown-visual figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  z-index: 1;
+  display: grid;
+  gap: 6px;
+  color: #ffffff;
+}
+
+.breakdown-visual figcaption strong {
+  font-size: 1rem;
+}
+
+.breakdown-visual figcaption span {
+  max-width: 320px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.breakdown-content {
+  display: grid;
+  gap: 18px;
+  padding: 8px;
+}
+
+.breakdown-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.breakdown-list article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 13px;
+  min-height: 150px;
+  padding: 18px;
+  background: #f8fbfe;
+  border: 1px solid rgba(19, 34, 53, 0.08);
+  border-radius: 14px;
+}
+
+.breakdown-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  color: #0b58aa;
+  background: #e8f3ff;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.breakdown-list h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.breakdown-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.breakdown-callout {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #102b4b 0%, #173f69 100%);
+  border-radius: 14px;
+}
+
+.breakdown-callout strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1rem;
+}
+
+.breakdown-callout p {
+  max-width: 560px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.breakdown-callout .btn {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 12px 17px;
+  border-radius: 12px;
+}
+
 /* ---------- Bandeau de statistiques ---------- */
 
 .lp-stats-band {
@@ -4864,6 +5020,16 @@ h1 {
 /* ---------- Responsive pages intérieures ---------- */
 
 @media (max-width: 980px) {
+  .breakdown-panel {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .breakdown-visual,
+  .breakdown-visual img {
+    min-height: 300px;
+  }
+
   .lp-option-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -5109,6 +5275,84 @@ h1 {
     margin-top: 4px;
     padding: 16px;
     border-radius: 14px;
+  }
+
+  .breakdown-section {
+    padding-top: 42px;
+  }
+
+  .breakdown-head p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .breakdown-panel {
+    margin-top: 18px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .breakdown-visual {
+    border-radius: 12px;
+  }
+
+  .breakdown-visual,
+  .breakdown-visual img {
+    min-height: 210px;
+  }
+
+  .breakdown-visual figcaption {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+  }
+
+  .breakdown-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .breakdown-content {
+    gap: 12px;
+    padding: 0;
+  }
+
+  .breakdown-list article {
+    display: block;
+    min-height: 0;
+    padding: 13px;
+    border-radius: 12px;
+  }
+
+  .breakdown-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 9px;
+    font-size: 0.62rem;
+  }
+
+  .breakdown-list h3 {
+    font-size: 0.84rem;
+  }
+
+  .breakdown-list p {
+    font-size: 0.74rem;
+    line-height: 1.45;
+  }
+
+  .breakdown-callout {
+    display: grid;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .breakdown-callout p {
+    font-size: 0.78rem;
+  }
+
+  .breakdown-callout .btn {
+    width: 100%;
+    justify-content: center;
   }
 
   .lp-option-grid {
