@@ -6244,6 +6244,93 @@ body {
   text-decoration: none;
 }
 
+.maintenance-scope-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.maintenance-scope-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(13, 45, 84, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 16px 34px rgba(7, 34, 64, 0.07);
+}
+
+.maintenance-scope-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.maintenance-scope-card div {
+  padding: 18px;
+}
+
+.maintenance-scope-card span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 14px;
+  color: var(--blue-dark);
+  font-size: 0.75rem;
+  font-weight: 950;
+  background: var(--blue-soft);
+  border-radius: 999px;
+}
+
+.maintenance-scope-card h3 {
+  margin: 0 0 9px;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.22;
+}
+
+.maintenance-scope-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.58;
+}
+
+.maintenance-scope-card ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.maintenance-scope-card li {
+  position: relative;
+  padding-left: 16px;
+  color: #24364c;
+  font-size: 0.78rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.maintenance-scope-card li::before {
+  position: absolute;
+  top: 0.58em;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  border-radius: 50%;
+  content: "";
+  transform: translateY(-50%);
+}
+
+@media (max-width: 980px) {
+  .maintenance-scope-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 760px) {
   .maintenance-law-section {
     padding: 20px 0 10px;
@@ -6287,5 +6374,41 @@ body {
 
   .maintenance-law-price strong {
     font-size: 3.4rem;
+  }
+
+  .maintenance-scope-grid {
+    gap: 10px;
+  }
+
+  .maintenance-scope-card {
+    border-radius: 10px;
+  }
+
+  .maintenance-scope-card div {
+    padding: 12px;
+  }
+
+  .maintenance-scope-card img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .maintenance-scope-card span {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 10px;
+    font-size: 0.66rem;
+  }
+
+  .maintenance-scope-card h3 {
+    font-size: 0.86rem;
+  }
+
+  .maintenance-scope-card p {
+    font-size: 0.74rem;
+    line-height: 1.45;
+  }
+
+  .maintenance-scope-card li {
+    font-size: 0.68rem;
   }
 }
