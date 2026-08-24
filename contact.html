@@ -78,13 +78,8 @@
                 <p>Pour une installation ou un entretien, le formulaire permet de préciser votre besoin afin de préparer une réponse plus complète.</p>
               </article>
             </div>
-            <form class="lp-form lead-form" action="https://formsubmit.co/contact@lexvdufroid.fr" method="POST">
-              <input type="hidden" name="_subject" value="Nouvelle demande" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://lexvdufroid.fr/merci.html" />
-              <input type="hidden" name="_autoresponse" value="Bonjour, nous avons bien reçu votre demande pour Le XV du Froid. Merci pour votre message. Nous allons reprendre les informations envoyées et vous recontacter rapidement par téléphone ou par email. À bientôt, Le XV du Froid." />
-              <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
+            <form class="lp-form lead-form" action="contact.php" method="POST">
+              <input type="text" name="site_web" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
 
               <div class="lp-form-grid">
                 <label>Nom et prénom<input type="text" name="Nom et prénom" placeholder="Votre nom" autocomplete="name" required /></label>
