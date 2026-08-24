@@ -78,8 +78,13 @@
                 <p>Pour une installation ou un entretien, le formulaire permet de préciser votre besoin afin de préparer une réponse plus complète.</p>
               </article>
             </div>
-            <form class="lp-form lead-form" id="contact-form" action="mailto:contact@lexvdufroid.fr" method="post" enctype="text/plain" data-email="contact@lexvdufroid.fr">
-              <input type="text" name="site_web" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
+            <form class="lp-form lead-form" id="contact-form" action="https://formsubmit.co/d3cdabac3858cbe382322f099de2dc6b" method="POST">
+              <input type="hidden" name="_subject" value="Nouvelle demande" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://lexvdufroid.fr/merci.html" />
+              <input type="hidden" name="_autoresponse" value="Bonjour, votre demande a bien été envoyée. Vous serez contacté rapidement. Le XV du Froid." />
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true" />
 
               <div class="lp-form-grid">
                 <label>Nom et prénom<input type="text" name="Nom et prénom" placeholder="Votre nom" autocomplete="name" required /></label>
@@ -124,10 +129,7 @@
               <p class="form-note">
                 Votre demande sera envoyée directement à Le XV du Froid avec vos coordonnées et les détails de l’intervention.
               </p>
-              <p class="form-success" id="form-success" aria-live="polite" hidden>
-                Votre demande a bien été envoyée. Vous serez contacté rapidement.
-              </p>
-              <button class="btn btn-red" id="contact-send" type="button">Envoyer ma demande</button>
+              <button class="btn btn-red" type="submit">Envoyer ma demande</button>
             </form>
           </div>
           <aside class="lp-contact-card">
@@ -203,54 +205,5 @@
       <span>☎</span>
       <strong>Appeler</strong>
     </a>
-    <script>
-      const contactForm = document.querySelector("#contact-form");
-      const formSuccess = document.querySelector("#form-success");
-      const contactSend = document.querySelector("#contact-send");
-
-      const sendContactRequest = () => {
-        if (!contactForm.reportValidity()) {
-          return;
-        }
-
-        const data = new FormData(contactForm);
-
-        if (data.get("site_web")) {
-          return;
-        }
-
-        const lead = {
-          "Nom et prénom": data.get("Nom et prénom"),
-          "Téléphone": data.get("Téléphone"),
-          "Email": data.get("email"),
-          "Ville": data.get("Ville"),
-          "Type de demande": data.get("Type de demande"),
-          "Type de bien": data.get("Type de bien"),
-          "Délai souhaité": data.get("Délai souhaité"),
-          "Nombre d’unités": data.get("Nombre d’unités") || "Non renseigné",
-          "Message": data.get("Message"),
-        };
-
-        const body = [
-          "Nouvelle demande depuis le site Le XV du Froid",
-          "",
-          ...Object.entries(lead).map(([label, value]) => `${label} : ${value}`),
-        ].join("\n");
-
-        const email = contactForm.dataset.email;
-        const subject = "Nouvelle demande";
-        window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-        formSuccess.hidden = false;
-        contactForm.reset();
-      };
-
-      contactSend?.addEventListener("click", sendContactRequest);
-
-      contactForm?.addEventListener("submit", (event) => {
-        event.preventDefault();
-        sendContactRequest();
-      });
-    </script>
   </body>
 </html>
