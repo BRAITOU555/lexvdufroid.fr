@@ -4604,6 +4604,190 @@ h1 {
   line-height: 1.6;
 }
 
+/* ---------- A propos : expertise metier ---------- */
+
+.about-services-section {
+  background:
+    radial-gradient(520px 240px at 12% 0%, rgba(52, 109, 157, 0.08), transparent 70%),
+    #ffffff;
+}
+
+.about-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-service-grid article {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  overflow: hidden;
+  min-height: 210px;
+  background: #ffffff;
+  border: 1px solid rgba(19, 34, 53, 0.09);
+  border-radius: 14px;
+  box-shadow: 0 14px 34px rgba(19, 34, 53, 0.07);
+}
+
+.about-service-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-service-grid article > div {
+  padding: 24px;
+}
+
+.about-service-grid span {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: #0b58aa;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-service-grid h3 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 1.08rem;
+  line-height: 1.24;
+}
+
+.about-service-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.about-fluid-section {
+  padding: 76px 0;
+  color: #ffffff;
+  background:
+    radial-gradient(620px 280px at 86% 0%, rgba(84, 174, 255, 0.22), transparent 70%),
+    linear-gradient(135deg, #0c2643 0%, #173a61 100%);
+}
+
+.about-fluid-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 48px;
+  align-items: start;
+}
+
+.about-fluid-grid h2 {
+  max-width: 620px;
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: clamp(1.7rem, 3vw, 2.65rem);
+  line-height: 1.08;
+}
+
+.about-fluid-grid p {
+  margin: 0 0 16px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.about-fluid-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.about-fluid-cards article {
+  min-height: 150px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+}
+
+.about-fluid-cards strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.about-fluid-cards span {
+  display: block;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.about-qualifications-section {
+  background: #f7fafc;
+}
+
+.about-qualifications-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: 44px;
+  align-items: center;
+}
+
+.about-qualifications-copy h2 {
+  margin: 0 0 18px;
+  color: var(--ink);
+  font-size: clamp(1.55rem, 2.5vw, 2.3rem);
+  line-height: 1.12;
+}
+
+.about-qualifications-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.72;
+}
+
+.about-step-list {
+  display: grid;
+  gap: 12px;
+}
+
+.about-step-list article {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 16px;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid rgba(19, 34, 53, 0.09);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(19, 34, 53, 0.06);
+}
+
+.about-step-list span {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  color: #0b58aa;
+  background: #e8f3ff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.about-step-list strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--ink);
+  font-size: 1.02rem;
+}
+
+.about-step-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
 /* ---------- Mise en page à deux colonnes ---------- */
 
 .lp-split-layout {
@@ -5065,6 +5249,20 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .about-service-grid,
+  .about-fluid-grid,
+  .about-qualifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-service-grid article {
+    grid-template-columns: 170px minmax(0, 1fr);
+  }
+
+  .about-fluid-section {
+    padding: 56px 0;
+  }
+
   .lp-split-layout {
     grid-template-columns: 1fr;
   }
@@ -5105,6 +5303,109 @@ h1 {
 }
 
 @media (max-width: 720px) {
+  .about-service-grid {
+    gap: 10px;
+  }
+
+  .about-service-grid article {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .about-service-grid img {
+    aspect-ratio: 16 / 8;
+    height: auto;
+  }
+
+  .about-service-grid article > div {
+    padding: 16px;
+  }
+
+  .about-service-grid span {
+    margin-bottom: 8px;
+    font-size: 0.62rem;
+  }
+
+  .about-service-grid h3 {
+    font-size: 0.92rem;
+  }
+
+  .about-service-grid p {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .about-fluid-section {
+    padding: 42px 0;
+  }
+
+  .about-fluid-grid {
+    gap: 22px;
+  }
+
+  .about-fluid-grid h2 {
+    font-size: 1.45rem;
+  }
+
+  .about-fluid-grid p {
+    font-size: 0.82rem;
+    line-height: 1.58;
+  }
+
+  .about-fluid-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .about-fluid-cards article {
+    min-height: 0;
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .about-fluid-cards strong {
+    font-size: 0.8rem;
+  }
+
+  .about-fluid-cards span {
+    font-size: 0.7rem;
+    line-height: 1.45;
+  }
+
+  .about-qualifications-grid {
+    gap: 20px;
+  }
+
+  .about-qualifications-copy h2 {
+    font-size: 1.35rem;
+  }
+
+  .about-qualifications-copy p {
+    font-size: 0.82rem;
+    line-height: 1.58;
+  }
+
+  .about-step-list article {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .about-step-list span {
+    width: 32px;
+    height: 32px;
+    font-size: 0.62rem;
+  }
+
+  .about-step-list strong {
+    font-size: 0.88rem;
+  }
+
+  .about-step-list p {
+    font-size: 0.76rem;
+    line-height: 1.45;
+  }
+
   .local-page .lp-hero {
     padding: 18px 0 22px;
   }
