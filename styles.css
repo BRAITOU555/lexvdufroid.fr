@@ -7955,6 +7955,87 @@ body {
   font-weight: 850;
 }
 
+.local-page.local-page-v2 .local-text-note {
+  padding: 28px 0 0 30px;
+  border-left: 3px solid var(--red);
+}
+
+.local-page.local-page-v2 .local-text-note strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--blue-dark);
+  font-size: 1.02rem;
+  font-weight: 900;
+}
+
+.local-page.local-page-v2 .local-text-note p {
+  margin: 0;
+}
+
+.local-page.local-page-v2 .local-text-list {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.local-page.local-page-v2 .local-text-list li {
+  position: relative;
+  padding-left: 22px;
+  color: #eaf3ff;
+  font-size: 0.92rem;
+  line-height: 1.58;
+}
+
+.local-page.local-page-v2 .local-text-list li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--red);
+  border-radius: 999px;
+  content: "";
+}
+
+.local-page.local-page-v2 .local-text-panel p,
+.local-page.local-page-v2 .local-text-panel li {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.local-page.local-page-v2 .local-text-panel strong {
+  color: #ffffff;
+}
+
+.local-page.local-page-v2 .local-plain-note {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.local-page.local-page-v2 .local-area-text {
+  max-width: 860px;
+}
+
+.local-page.local-page-v2 .local-area-text p {
+  margin-bottom: 16px;
+}
+
+.local-page.local-page-v2 .local-link-line {
+  max-width: 840px;
+}
+
+.local-page.local-page-v2 .local-link-line a {
+  color: var(--blue);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.local-page.local-page-v2 .local-link-line a:hover {
+  color: var(--red);
+}
+
 .local-page.local-page-v2 .local-photo-block {
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
@@ -8087,5 +8168,22 @@ body {
 
   .local-page.local-page-v2 .local-photo-block > div {
     padding: 18px;
+  }
+
+  .local-page.local-page-v2 .local-text-note {
+    padding: 16px 0 0 16px;
+  }
+
+  .local-page.local-page-v2 .local-text-note strong {
+    font-size: 0.9rem;
+  }
+
+  .local-page.local-page-v2 .local-text-list {
+    gap: 8px;
+  }
+
+  .local-page.local-page-v2 .local-text-list li {
+    font-size: 0.78rem;
+    line-height: 1.48;
   }
 }
