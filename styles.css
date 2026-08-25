@@ -7174,6 +7174,99 @@ body {
     linear-gradient(180deg, #ffffff 0%, #f5f8fb 100%);
 }
 
+.zones-editorial-head {
+  max-width: 880px;
+  margin: 0 auto 32px;
+  text-align: left;
+}
+
+.zones-editorial-head h2 {
+  max-width: 760px;
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+  line-height: 1.16;
+}
+
+.zones-editorial-head p:not(.lp-eyebrow) {
+  max-width: 860px;
+  color: #46586d;
+  font-size: 0.95rem;
+  line-height: 1.72;
+}
+
+.zones-department-list {
+  max-width: 980px;
+  margin: 0 auto;
+  border-top: 1px solid #dce8f4;
+}
+
+.zones-department-line {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 22px;
+  padding: 24px 0;
+  border-bottom: 1px solid #dce8f4;
+}
+
+.zones-department-line > span {
+  display: inline-grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 950;
+  background: var(--blue);
+  border-radius: 999px;
+}
+
+.zones-department-line:first-child > span {
+  background: var(--red);
+}
+
+.zones-department-line h3 {
+  margin: 0 0 8px;
+  color: var(--blue-dark);
+  font-size: 1.16rem;
+  line-height: 1.2;
+}
+
+.zones-department-line p {
+  max-width: 880px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.68;
+}
+
+.zones-inline-links {
+  margin-top: 10px !important;
+}
+
+.zones-inline-links a,
+.zones-useful-links a {
+  color: var(--blue);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.zones-inline-links a:hover,
+.zones-useful-links a:hover {
+  color: var(--red);
+}
+
+.zones-useful-links {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 880px;
+  gap: 10px 18px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
 .zones-simple-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -7410,6 +7503,37 @@ body {
 
   .zones-directory {
     padding-top: 42px;
+  }
+
+  .zones-editorial-head {
+    margin-bottom: 22px;
+  }
+
+  .zones-editorial-head h2 {
+    font-size: 1.2rem;
+  }
+
+  .zones-editorial-head p:not(.lp-eyebrow),
+  .zones-department-line p,
+  .zones-useful-links {
+    font-size: 0.78rem;
+    line-height: 1.52;
+  }
+
+  .zones-department-line {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 12px;
+    padding: 18px 0;
+  }
+
+  .zones-department-line > span {
+    width: 34px;
+    height: 34px;
+    font-size: 0.68rem;
+  }
+
+  .zones-department-line h3 {
+    font-size: 0.98rem;
   }
 
   .zones-check-section {
