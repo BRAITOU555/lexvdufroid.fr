@@ -47,6 +47,11 @@
             "url": "https://lexvdufroid.fr/",
             "telephone": "+33757832626",
             "email": "contact@lexvdufroid.fr",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "Île-de-France",
+              "addressCountry": "FR"
+            },
             "logo": {
               "@type": "ImageObject",
               "@id": "https://lexvdufroid.fr/#logo",
@@ -66,6 +71,13 @@
             ],
             "priceRange": "€€",
             "slogan": "La force du bleu, l’expertise du froid",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+33757832626",
+              "contactType": "customer service",
+              "areaServed": "FR-IDF",
+              "availableLanguage": ["fr-FR"]
+            },
             "knowsAbout": [
               "installation climatisation Paris 1er",
               "climatisation réversible",
@@ -84,6 +96,20 @@
             "inLanguage": "fr-FR"
           },
           {
+            "@type": "SiteNavigationElement",
+            "@id": "https://lexvdufroid.fr/#navigation",
+            "name": ["Accueil", "Installation", "Entretien", "Dépannage", "Nos zones", "Blog", "Contact"],
+            "url": [
+              "https://lexvdufroid.fr/",
+              "https://lexvdufroid.fr/climatisation.html",
+              "https://lexvdufroid.fr/entretien.html",
+              "https://lexvdufroid.fr/depannage.html",
+              "https://lexvdufroid.fr/zones.html",
+              "https://lexvdufroid.fr/blog.html",
+              "https://lexvdufroid.fr/contact.html"
+            ]
+          },
+          {
             "@type": "ImageObject",
             "@id": "https://lexvdufroid.fr/images/pose-clim-niveau.png",
             "url": "https://lexvdufroid.fr/images/pose-clim-niveau.png",
@@ -99,8 +125,17 @@
             "description": "Installation de climatisation réversible à Paris 1er pour appartements, bureaux, boutiques, restaurants et locaux professionnels.",
             "isPartOf": { "@id": "https://lexvdufroid.fr/#website" },
             "about": { "@id": "https://lexvdufroid.fr/#business" },
+            "mainEntity": { "@id": "https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html#service" },
             "primaryImageOfPage": { "@id": "https://lexvdufroid.fr/images/pose-clim-niveau.png" },
             "breadcrumb": { "@id": "https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html#breadcrumb" },
+            "keywords": [
+              "installation climatisation Paris 1er",
+              "installateur clim Paris 1er",
+              "pose climatisation Louvre",
+              "climatisation réversible Paris 75001",
+              "climatisation boutique Paris 1er",
+              "climatisation appartement Paris centre"
+            ],
             "inLanguage": "fr-FR"
           },
           {
@@ -146,11 +181,63 @@
             "description": "Pose de climatisation réversible, mono-split et multi-split pour appartements, bureaux, boutiques et restaurants dans le 1er arrondissement de Paris."
           },
           {
+            "@type": "HowTo",
+            "@id": "https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html#howto",
+            "name": "Comment se déroule une installation de climatisation à Paris 1er",
+            "description": "Méthode Le XV du Froid pour étudier, poser et mettre en service une climatisation réversible dans le 1er arrondissement de Paris.",
+            "supply": [
+              { "@type": "HowToSupply", "name": "Climatiseur réversible adapté au logement ou local" },
+              { "@type": "HowToSupply", "name": "Liaisons frigorifiques, évacuation des condensats et supports" }
+            ],
+            "tool": [
+              { "@type": "HowToTool", "name": "Outillage de pose et de contrôle frigorifique" },
+              { "@type": "HowToTool", "name": "Matériel de mise en service climatisation" }
+            ],
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Étude du lieu",
+                "text": "Analyse de la surface, de l'exposition, des accès, du niveau sonore et de l'emplacement des unités."
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Choix de la solution",
+                "text": "Sélection du système mono-split, multi-split, console ou climatisation réversible selon l'usage réel."
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Pose et raccordements",
+                "text": "Installation des unités, passage des liaisons, raccordements, évacuation des condensats et finitions."
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Mise en service",
+                "text": "Essais chaud et froid, vérification du fonctionnement, réglages et explications d'utilisation."
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html#quartiers",
+            "name": "Quartiers couverts pour installation climatisation Paris 1er",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Louvre" },
+              { "@type": "ListItem", "position": 2, "name": "Palais-Royal" },
+              { "@type": "ListItem", "position": 3, "name": "Les Halles" },
+              { "@type": "ListItem", "position": 4, "name": "Place Vendôme" },
+              { "@type": "ListItem", "position": 5, "name": "Rue de Rivoli" },
+              { "@type": "ListItem", "position": 6, "name": "Rue Saint-Honoré" },
+              { "@type": "ListItem", "position": 7, "name": "Châtelet" },
+              { "@type": "ListItem", "position": 8, "name": "Saint-Germain-l’Auxerrois" }
+            ]
+          },
+          {
             "@type": "Product",
             "@id": "https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html#product",
             "name": "Installation climatisation Paris 1er",
             "image": "https://lexvdufroid.fr/images/pose-clim-niveau.png",
             "brand": { "@type": "Brand", "name": "Le XV du Froid" },
+            "additionalType": "https://schema.org/Service",
             "description": "Prestation d'installation de climatisation réversible à Paris 1er : étude technique, pose, raccordements, mise en service et conseils d'utilisation.",
             "category": "Installation de climatisation",
             "offers": {
@@ -158,6 +245,8 @@
               "url": "https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html",
               "priceCurrency": "EUR",
               "availability": "https://schema.org/InStock",
+              "seller": { "@id": "https://lexvdufroid.fr/#business" },
+              "areaServed": { "@id": "https://lexvdufroid.fr/zones/installation-climatisation-paris-1er.html#place" },
               "priceSpecification": {
                 "@type": "PriceSpecification",
                 "priceCurrency": "EUR",
@@ -215,6 +304,22 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "La mise en service permet de contrôler les raccordements, les modes chaud et froid, les réglages, l'évacuation et le bon fonctionnement avant l'utilisation quotidienne."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quels quartiers du Paris 1er sont couverts ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nous couvrons les demandes autour du Louvre, Palais-Royal, Les Halles, Vendôme, rue de Rivoli, rue Saint-Honoré, Châtelet et Saint-Germain-l’Auxerrois."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Faut-il prévoir l’entretien après une installation ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui. Un entretien régulier limite les odeurs, les pertes de performance, les écoulements et les pannes. Il permet aussi de conserver une installation plus fiable dans le temps."
                 }
               }
             ]
@@ -356,20 +461,21 @@
               </div>
             </article>
 
-            <section id="quartiers" class="seo-panel">
-              <h2>Quartiers couverts pour la pose de climatisation Paris 1er</h2>
+            <section id="contraintes" class="seo-panel">
+              <h2>Les contraintes à vérifier avant une pose dans Paris 1er</h2>
               <p>
-                Nous travaillons les demandes d’installation climatisation dans les principaux secteurs du
-                1er arrondissement : quartier du Louvre, Palais-Royal, Les Halles, Saint-Germain-l’Auxerrois,
-                Vendôme, rue Saint-Honoré, rue de Rivoli, secteur Châtelet et rues voisines. Chaque zone a
-                ses contraintes : accès, bruit, voisinage, façade, commerce en activité, logement occupé ou
-                local recevant du public.
+                Paris 1er demande une vraie lecture du bâtiment. Entre les immeubles anciens, les cours
+                intérieures, les commerces en activité, les logements occupés et les façades sensibles, une
+                installation de climatisation doit être pensée avant le devis. Le bon emplacement d’une unité
+                intérieure ne suffit pas : il faut aussi prévoir le parcours des liaisons, la fixation du groupe,
+                l’évacuation des condensats, le bruit, l’accès futur pour l’entretien et la discrétion de la pose.
               </p>
-              <div class="zone-grid">
-                <a class="zone-card" href="../contact.html"><span>Louvre</span><strong>Installation clim près du Louvre</strong><p>Solutions discrètes pour appartements, bureaux et commerces.</p></a>
-                <a class="zone-card" href="../contact.html"><span>Halles</span><strong>Pose climatisation Les Halles</strong><p>Confort pour boutiques, restaurants et logements exposés.</p></a>
-                <a class="zone-card" href="../contact.html"><span>Vendôme</span><strong>Clim réversible place Vendôme</strong><p>Étude précise, niveau sonore et finitions maîtrisées.</p></a>
-              </div>
+              <p>
+                C’est pour cela que nous demandons toujours le type de lieu, la surface, l’étage, la pièce à
+                rafraîchir, les photos possibles et le secteur exact. Cette préparation permet de proposer une
+                climatisation réversible cohérente, sans vendre une solution trop faible ou trop compliquée à
+                maintenir.
+              </p>
             </section>
 
             <section id="systemes" class="seo-panel">
@@ -506,6 +612,31 @@
                   <summary>La mise en service est-elle comprise dans l’installation ?</summary>
                   <p>La mise en service sert à contrôler les raccordements, tester les modes chaud et froid, régler l’appareil, vérifier l’évacuation et expliquer l’utilisation.</p>
                 </details>
+                <details>
+                  <summary>Quels quartiers du Paris 1er sont couverts ?</summary>
+                  <p>Nous couvrons les demandes autour du Louvre, Palais-Royal, Les Halles, Vendôme, rue de Rivoli, rue Saint-Honoré, Châtelet et Saint-Germain-l’Auxerrois.</p>
+                </details>
+                <details>
+                  <summary>Faut-il prévoir l’entretien après une installation ?</summary>
+                  <p>Oui. Un entretien régulier limite les odeurs, les pertes de performance, les écoulements et les pannes. Il permet aussi de garder une installation plus fiable dans le temps.</p>
+                </details>
+              </div>
+            </section>
+
+            <section id="quartiers" class="seo-panel local-districts">
+              <h2>Quartiers couverts en bas de page : Paris 1er arrondissement</h2>
+              <p>
+                Pour une demande locale, nous intervenons dans tout le 1er arrondissement de Paris. Le secteur
+                exact change souvent la façon de préparer la pose : accès, stationnement, horaires, voisinage,
+                commerce ouvert, logement occupé, copropriété ou local professionnel.
+              </p>
+              <div class="zone-grid">
+                <a class="zone-card" href="../contact.html"><span>75001</span><strong>Installation climatisation Louvre</strong><p>Appartement, bureau, local professionnel et commerce proche musée du Louvre.</p></a>
+                <a class="zone-card" href="../contact.html"><span>75001</span><strong>Pose clim Palais-Royal</strong><p>Étude discrète pour immeuble ancien, cour intérieure ou local professionnel.</p></a>
+                <a class="zone-card" href="../contact.html"><span>75001</span><strong>Climatisation Les Halles</strong><p>Solutions pour boutique, restaurant, logement exposé et bureau en centre de Paris.</p></a>
+                <a class="zone-card" href="../contact.html"><span>75001</span><strong>Clim réversible Vendôme</strong><p>Pose soignée, bruit maîtrisé, finitions adaptées aux lieux exigeants.</p></a>
+                <a class="zone-card" href="../contact.html"><span>75001</span><strong>Installateur clim rue de Rivoli</strong><p>Dimensionnement selon vitrine, exposition, surface et fréquentation.</p></a>
+                <a class="zone-card" href="../contact.html"><span>75001</span><strong>Pose clim rue Saint-Honoré</strong><p>Installation pour commerce, bureau, appartement ou espace recevant du public.</p></a>
               </div>
             </section>
 
@@ -523,13 +654,14 @@
             <nav class="seo-toc" aria-label="Sommaire Paris 1er">
               <strong>Sommaire</strong>
               <a href="#installation">Installation Paris 1er</a>
-              <a href="#quartiers">Quartiers couverts</a>
+              <a href="#contraintes">Contraintes du lieu</a>
               <a href="#systemes">Systèmes possibles</a>
               <a href="#methode">Méthode de pose</a>
               <a href="#confiance">Pourquoi nous choisir</a>
               <a href="#prix">Prix et devis</a>
               <a href="#prestation">Prestation</a>
               <a href="#faq">FAQ</a>
+              <a href="#quartiers">Quartiers couverts</a>
             </nav>
             <div class="seo-side-card">
               <strong>Devis installation Paris 1er</strong>
