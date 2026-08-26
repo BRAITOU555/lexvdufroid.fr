@@ -7018,8 +7018,12 @@ body {
 .home-page .lp-hero h1 {
   max-width: 760px;
   color: #142235;
-  font-size: clamp(1.85rem, 3.2vw, 3.05rem);
-  line-height: 1.08;
+  font-family: Montserrat, Inter, Arial, sans-serif;
+  font-size: clamp(1.78rem, 3vw, 2.85rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  text-transform: none;
 }
 
 .home-page .lp-hero-lead {
