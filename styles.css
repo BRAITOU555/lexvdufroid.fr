@@ -7047,36 +7047,59 @@ body {
 
 .home-page .lp-proof-cards {
   margin-top: 0;
-  padding: 28px 0 10px;
-  background: #ffffff;
+  padding: 34px 0 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfa 100%);
 }
 
 .home-page .lp-proof-grid {
-  gap: 0;
-  border-top: 1px solid rgba(19, 34, 53, 0.1);
-  border-bottom: 1px solid rgba(19, 34, 53, 0.1);
+  gap: 12px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(19, 34, 53, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 14px 34px rgba(20, 34, 53, 0.06);
 }
 
 .home-page .lp-proof-grid article {
+  position: relative;
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  column-gap: 14px;
+  align-items: start;
   min-height: auto;
-  padding: 22px 24px;
-  background: transparent;
+  padding: 18px 16px;
+  background: #fbfbfa;
   border: 0;
-  border-right: 1px solid rgba(19, 34, 53, 0.1);
-  border-radius: 0;
+  border-radius: 13px;
   box-shadow: none;
 }
 
 .home-page .lp-proof-grid span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  margin: 0;
   color: #a83b35;
+  font-size: 0.78rem;
+  letter-spacing: 0;
+  background: #fff1ef;
+  border: 1px solid rgba(168, 59, 53, 0.14);
+  border-radius: 50%;
+  grid-row: 1 / span 2;
 }
 
 .home-page .lp-proof-grid strong {
   color: #142235;
+  margin: 1px 0 6px;
+  font-size: 0.95rem;
+  line-height: 1.22;
 }
 
 .home-page .lp-proof-grid p {
   color: #5b6674;
+  font-size: 0.78rem;
+  line-height: 1.48;
 }
 
 .home-page .lp-proof-grid article:last-child {
@@ -7301,14 +7324,6 @@ body {
   .home-page .lp-proof-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .home-page .lp-proof-grid article:nth-child(2) {
-    border-right: 0;
-  }
-
-  .home-page .lp-proof-grid article:nth-child(n + 3) {
-    border-top: 1px solid rgba(19, 34, 53, 0.1);
-  }
 }
 
 @media (max-width: 720px) {
@@ -7331,19 +7346,38 @@ body {
   }
 
   .home-page .lp-proof-cards {
-    padding: 14px 0 4px;
+    padding: 18px 0 8px;
+  }
+
+  .home-page .lp-proof-grid {
+    gap: 8px;
+    padding: 8px;
+    border-radius: 14px;
   }
 
   .home-page .lp-proof-grid article {
-    padding: 16px 14px;
+    display: block;
+    padding: 14px 11px 13px;
+    border-radius: 11px;
+  }
+
+  .home-page .lp-proof-grid span {
+    width: 31px;
+    height: 31px;
+    margin-bottom: 9px;
+    font-size: 0.66rem;
   }
 
   .home-page .lp-proof-grid strong {
-    font-size: 0.82rem;
+    min-height: 34px;
+    margin-bottom: 5px;
+    font-size: 0.77rem;
+    line-height: 1.15;
   }
 
   .home-page .lp-proof-grid p {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
+    line-height: 1.38;
   }
 
   .home-page .lp-statement,
