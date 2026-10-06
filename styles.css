@@ -7060,11 +7060,16 @@ body {
   max-width: 760px;
   color: #142235;
   font-family: Montserrat, Inter, Arial, sans-serif;
-  font-size: clamp(1.78rem, 3vw, 2.85rem);
-  font-weight: 900;
-  line-height: 1.1;
-  letter-spacing: -0.015em;
+  font-size: clamp(1.9rem, 3.2vw, 3rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   text-transform: none;
+}
+
+.home-page .lp-hero h1 .hero-accent {
+  color: var(--red);
+  font-weight: 600;
 }
 
 .home-page .lp-hero-lead {

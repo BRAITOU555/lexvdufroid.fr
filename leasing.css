@@ -1,0 +1,24 @@
+/* Styles limités à la page leasing. */
+.leasing-page .leasing-intro {max-width: 820px; margin: 20px 0 28px; line-height: 1.8; color: var(--muted);}
+.leasing-page .leasing-hero-note {margin-top: 22px; color: #fff; font-size: .9rem; line-height: 1.6;}
+.leasing-page .leasing-tint {background: #f3f7fc;}
+.leasing-page section[id] {scroll-margin-top: 120px;}
+.leasing-page .leasing-note {font-size: .85rem; line-height: 1.7; color: var(--muted);}
+.leasing-page .leasing-list {padding-left: 22px; line-height: 1.8;}
+.leasing-page .leasing-list li {margin-bottom: 12px;}
+.leasing-page .leasing-result {padding: 20px; border-left: 4px solid #176c9d; border-radius: 8px; background: #eaf4fc; line-height: 1.75;}
+.leasing-page .leasing-result a {display: inline-block; margin-top: 12px; font-weight: 800;}
+.leasing-page .leasing-steps {display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 28px;}
+.leasing-page .leasing-steps article {padding: 28px; border: 1px solid var(--line); border-radius: 20px; background: #f8fbff;}
+.leasing-page .leasing-steps article > span {font-weight: 900; color: #b92332; font-size: 1.8rem;}
+.leasing-page .leasing-steps h3 {margin: 18px 0 12px;}
+.leasing-page .leasing-steps p {line-height: 1.75; color: var(--muted);}
+.leasing-page .leasing-fields {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;}
+.leasing-page .lp-form .leasing-consent {display: flex; align-items: flex-start; font-weight: 500; line-height: 1.6;}
+.leasing-page .leasing-consent input {width: 18px; height: 18px; flex: 0 0 18px; margin-top: 4px;}
+.leasing-page .leasing-faq {margin-top: 28px;}
+.leasing-page .leasing-faq details {border-bottom: 1px solid var(--line); padding: 20px 0;}
+.leasing-page .leasing-faq summary {cursor: pointer; font-size: 1.1rem; font-weight: 800;}
+.leasing-page .leasing-faq p {max-width: 900px; line-height: 1.8; color: var(--muted); margin-top: 16px;}
+.leasing-page [hidden] {display: none !important;}
+@media (max-width: 760px) {.leasing-page .leasing-steps, .leasing-page .leasing-fields {grid-template-columns: 1fr;} .leasing-page .lp-form {padding: 20px;} .leasing-page .lp-actions {flex-wrap: wrap;} }
