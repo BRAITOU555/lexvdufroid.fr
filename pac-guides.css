@@ -31,12 +31,6 @@
 .pac-hub-guide-links > a {color:#173c54;}
 .pac-guide-inline {margin:22px 0 0; font-size:.85rem; line-height:1.7;}
 .leasing-page .pac-guide-inline a {color:#173c54; text-underline-offset:4px;}
-#blog-leasing-pac {scroll-margin-top:145px;}
-#blog-leasing-pac .blog-grid {margin-top:24px; gap:16px;}
-#blog-leasing-pac .blog-card img {height:145px; aspect-ratio:auto;}
-#blog-leasing-pac .blog-card > div {padding:16px;}
-#blog-leasing-pac .blog-card h3 {font-size:1rem;}
-#blog-leasing-pac .blog-card p {font-size:.85rem;}
 @media(max-width:900px) {.pac-guide-layout {grid-template-columns:minmax(0,1fr) 230px; gap:30px;}}
 @media(max-width:760px) {
  .pac-guide .lp-hero {padding:28px 0;}
@@ -57,5 +51,3 @@
 }
 
 .leasing-page .pac-budget-grid > .pac-guide-inline {grid-column:1 / -1; margin-top:0;}
-
-#blog-leasing-pac .blog-category-head > span {font-size:2rem; align-self:flex-start;}
