@@ -1,0 +1,61 @@
+/* Guides PAC et listes de liens compactes. */
+.pac-guide .lp-hero {background:#f5f4ef; color:#122f44; padding:42px 0;}
+.pac-guide .lp-hero h1 {color:#122f44; text-transform:none; font-size:clamp(1.85rem,3vw,2.7rem); letter-spacing:-.045em;}
+.pac-guide .lp-hero-lead {color:#52616d; line-height:1.8;}
+.pac-guide .lp-hero-media {box-shadow:none; border:none;}
+.pac-guide .lp-hero-media img {height:320px; object-fit:cover;}
+.pac-guide .lp-eyebrow {color:#bd2e3c;}
+.pac-guide-meta {font-size:.74rem; color:#60737d; margin:20px 0;}
+.pac-guide-layout {display:grid; grid-template-columns:minmax(0,1fr) 280px; gap:64px; padding-top:48px; padding-bottom:60px;}
+.pac-guide-layout > article > section {margin-bottom:38px; scroll-margin-top:150px;}
+.pac-guide-layout article h2 {font-size:1.7rem; text-transform:none; margin-bottom:20px; letter-spacing:-.035em;}
+.pac-guide-layout article p {font-size:.95rem; color:#52616d; line-height:1.85; margin:0 0 18px;}
+.pac-guide-layout article a:not(.btn) {color:#173c54; text-underline-offset:4px;}
+.pac-guide-toc {position:sticky; top:145px; display:grid; gap:16px; padding:22px; border:1px solid #dce5e9; border-radius:10px; background:#f7f9fa; font-size:.82rem;}
+.pac-guide-toc a {line-height:1.5; color:#36586a; text-decoration:none;}
+.pac-guide-toc a:hover {text-decoration:underline;}
+.pac-guide-side-link {display:block; margin-top:20px; font-size:.82rem; line-height:1.6; color:#173c54;}
+.pac-guide details {border-top:1px solid #dce5e9; padding:18px 0;}
+.pac-guide summary {cursor:pointer; font-weight:700; line-height:1.5;}
+.pac-guide details p {margin-top:16px;}
+.pac-guide-table {width:100%; border-collapse:collapse; margin:22px 0; font-size:.85rem;}
+.pac-guide-table caption {text-align:left; font-size:.75rem; color:#60737d; margin-bottom:12px; line-height:1.5;}
+.pac-guide-table th, .pac-guide-table td {text-align:left; padding:12px 8px; border-bottom:1px solid #dce5e9;}
+.pac-guide-related > div {display:grid; gap:12px;}
+.pac-guide-related > div > a, .pac-hub-guide-links > a {display:grid; grid-template-columns:95px minmax(0,1fr) 20px; gap:16px; padding:18px 0; border-top:1px solid #dce5e9; align-items:center; text-decoration:none;}
+.pac-guide-related a > span:first-child, .pac-hub-guide-links a > span:first-child {font-size:.7rem; color:#758994;}
+.pac-guide-related a > strong, .pac-hub-guide-links a > strong {font-size:.88rem; font-weight:650; line-height:1.6;}
+.pac-guide-cta {padding:24px; background:#f5f4ef; border-radius:10px;}
+.pac-guide-cta > a:last-child {display:block; margin-top:18px; font-size:.8rem;}
+.pac-hub-guide-links {margin-top:25px;}
+.pac-hub-guide-links > a {color:#173c54;}
+.pac-guide-inline {margin:22px 0 0; font-size:.85rem; line-height:1.7;}
+.leasing-page .pac-guide-inline a {color:#173c54; text-underline-offset:4px;}
+#blog-leasing-pac {scroll-margin-top:145px;}
+#blog-leasing-pac .blog-grid {margin-top:24px; gap:16px;}
+#blog-leasing-pac .blog-card img {height:145px; aspect-ratio:auto;}
+#blog-leasing-pac .blog-card > div {padding:16px;}
+#blog-leasing-pac .blog-card h3 {font-size:1rem;}
+#blog-leasing-pac .blog-card p {font-size:.85rem;}
+@media(max-width:900px) {.pac-guide-layout {grid-template-columns:minmax(0,1fr) 230px; gap:30px;}}
+@media(max-width:760px) {
+ .pac-guide .lp-hero {padding:28px 0;}
+ .pac-guide .lp-hero-split {grid-template-columns:1fr; gap:24px;}
+ .pac-guide .lp-hero-media img {height:220px;}
+ .pac-guide-layout {display:flex; flex-direction:column; gap:26px; padding-top:30px;}
+ .pac-guide-layout > aside {order:-1;}
+ .pac-guide-toc {position:static; padding:18px; gap:12px;}
+ .pac-guide-side-link {margin-top:12px;}
+ .pac-guide-layout article h2 {font-size:1.45rem;}
+ .pac-guide-layout article p {font-size:.9rem;}
+ .pac-guide-layout > article > section {scroll-margin-top:110px;}
+ .pac-guide-related > div > a, .pac-hub-guide-links > a {grid-template-columns:minmax(0,1fr) 20px; gap:8px; padding:14px 0;}
+ .pac-guide-related a > span:first-child, .pac-hub-guide-links a > span:first-child {grid-column:1 / -1;}
+ .pac-guide .floating-call {width:46px; min-width:46px; height:46px; padding:0; right:12px; bottom:12px; justify-content:center;}
+ .pac-guide .floating-call strong {display:none;}
+ .pac-guide-cta {padding:18px;}
+}
+
+.leasing-page .pac-budget-grid > .pac-guide-inline {grid-column:1 / -1; margin-top:0;}
+
+#blog-leasing-pac .blog-category-head > span {font-size:2rem; align-self:flex-start;}
