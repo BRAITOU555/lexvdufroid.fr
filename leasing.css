@@ -28,3 +28,27 @@
 .leasing-page .leasing-table th, .leasing-page .leasing-table td {padding: 14px 18px; text-align: left; border-bottom: 1px solid var(--line); line-height: 1.5;}
 .leasing-page .leasing-table th {background: #eaf4fc; font-weight: 600;}
 .leasing-page .lp-proof-grid article > span {font-weight: 600;}
+.leasing-page .leasing-toc {background: #f3f7fc; border-bottom: 1px solid var(--line);}
+.leasing-page .leasing-toc .lp-wrap {display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; padding: 12px 0; font-size: .88rem;}
+.leasing-page .leasing-toc a {color: #176c9d; text-decoration: none;}
+.leasing-page .leasing-toc a:hover {text-decoration: underline;}
+.leasing-page .leasing-cities {display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 20px 0; list-style: none;}
+.leasing-page .leasing-cities li {padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: #f8fbff; font-size: .92rem;}
+@media (max-width: 760px) {
+  .leasing-page .lp-proof-grid {display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;}
+  .leasing-page .lp-proof-grid article {padding: 10px 12px; min-height: 0;}
+  .leasing-page .lp-proof-grid article > span {font-size: 1rem;}
+  .leasing-page .lp-proof-grid article strong {font-size: .78rem;}
+  .leasing-page .lp-proof-grid article p {display: none;}
+  .leasing-page .leasing-steps {gap: 10px; margin-top: 16px;}
+  .leasing-page .leasing-steps article {padding: 14px 16px; border-radius: 12px;}
+  .leasing-page .leasing-steps article > span {font-size: 1.1rem;}
+  .leasing-page .leasing-steps h3 {margin: 6px 0 6px; font-size: 1rem;}
+  .leasing-page .leasing-steps p {font-size: .86rem; line-height: 1.55;}
+  .leasing-page .lp-duo-grid {gap: 10px;}
+  .leasing-page .lp-duo-grid article {padding: 14px 16px;}
+  .leasing-page .lp-duo-grid h3 {font-size: 1rem;}
+  .leasing-page .lp-duo-grid p {font-size: .86rem; line-height: 1.55;}
+  .leasing-page .leasing-table th, .leasing-page .leasing-table td {padding: 8px 10px; font-size: .82rem;}
+  .leasing-page .lp-contact-card {padding: 16px;}
+}
