@@ -9,14 +9,14 @@ eligibilityForm.addEventListener("submit", (event) => {
   const inRegion = ["75", "77", "78", "91", "92", "93", "94", "95"].includes(postcode.slice(0, 2));
   const owner = data.get("occupancy") === "owner";
   const house = data.get("building") === "Maison";
-  const fossil = ["Gaz", "Fioul"].includes(data.get("heating"));
+  const fossil = ["Gaz", "Fioul", "Charbon"].includes(data.get("heating"));
   const notes = [];
-  if (owner && house && fossil) notes.push("Votre situation correspond aux conditions de statut, de logement et de chauffage du leasing social. Reste à vérifier vos revenus avec le barème de l’Anah (ménages modestes ou très modestes).");
+  if (owner && house && fossil) notes.push("Votre situation correspond aux premiers critères de statut, de logement et de chauffage de l’offre intégrée. Les ressources du foyer, un éventuel dossier Anah déjà déposé et la faisabilité technique restent à vérifier.");
   else {
-    notes.push("Votre situation ne correspond pas à toutes les conditions du leasing social (propriétaire occupant d’une maison chauffée au gaz ou au fioul, revenus modestes).");
+    notes.push("Votre projet nécessite une orientation spécifique avant d’envisager l’offre intégrée.");
     if (!owner) notes.push("Le dispositif est réservé aux propriétaires occupants.");
     if (!house) notes.push("Il concerne uniquement les maisons individuelles.");
-    if (!fossil) notes.push("Il vise le remplacement d’une chaudière gaz ou fioul.");
+    if (!fossil) notes.push("Il vise le remplacement d’une chauffage fossile (gaz, fioul ou charbon).");
     notes.push("D’autres solutions de pompe à chaleur peuvent exister : demandez une étude.");
   }
   notes.push(inRegion ? "Votre projet est situé dans notre zone d’intervention en Île-de-France." : "Votre code postal est hors de notre zone habituelle : contactez-nous pour vérifier.");
@@ -30,6 +30,7 @@ eligibilityForm.addEventListener("submit", (event) => {
   document.querySelector("#study-postcode").value = postcode;
   document.querySelector("#study-occupancy").value = data.get("occupancy");
   document.querySelector("#study-building").value = data.get("building");
+  document.querySelector("#study-heating").value = data.get("heating") === "Autre" ? "Autre / à préciser" : data.get("heating");
 });
 const studyForm = document.querySelector("#study-form");
 studyForm.addEventListener("submit", async (event) => {
