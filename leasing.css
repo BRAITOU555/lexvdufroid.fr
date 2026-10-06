@@ -22,3 +22,9 @@
 .leasing-page .leasing-faq p {max-width: 900px; line-height: 1.8; color: var(--muted); margin-top: 16px;}
 .leasing-page [hidden] {display: none !important;}
 @media (max-width: 760px) {.leasing-page .leasing-steps, .leasing-page .leasing-fields {grid-template-columns: 1fr;} .leasing-page .lp-form {padding: 20px;} .leasing-page .lp-actions {flex-wrap: wrap;} }
+.leasing-page .leasing-sub {margin: 32px 0 12px;}
+.leasing-page .leasing-table-wrap {overflow-x: auto; margin: 20px 0;}
+.leasing-page .leasing-table {width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden;}
+.leasing-page .leasing-table th, .leasing-page .leasing-table td {padding: 14px 18px; text-align: left; border-bottom: 1px solid var(--line); line-height: 1.5;}
+.leasing-page .leasing-table th {background: #eaf4fc; font-weight: 600;}
+.leasing-page .lp-proof-grid article > span {font-weight: 600;}

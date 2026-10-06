@@ -7,10 +7,20 @@ eligibilityForm.addEventListener("submit", (event) => {
   const data = new FormData(eligibilityForm);
   const postcode = String(data.get("postcode"));
   const inRegion = ["75", "77", "78", "91", "92", "93", "94", "95"].includes(postcode.slice(0, 2));
-  const notes = [inRegion ? "Votre projet est situé dans notre zone d’intervention en Île-de-France. Une étude technique peut être demandée." : "Votre code postal est hors de notre zone habituelle en Île-de-France. Contactez-nous pour vérifier si votre projet peut être pris en charge."];
-  if (data.get("occupancy") === "tenant") notes.push("En tant que locataire, l’autorisation du propriétaire devra être vérifiée avant les travaux.");
-  if (data.get("building") === "Appartement") notes.push("Pour un appartement, les règles de copropriété et les autorisations éventuelles doivent aussi être examinées.");
-  notes.push("Ce résultat ne confirme ni la faisabilité de l’installation ni l’acceptation d’un financement.");
+  const owner = data.get("occupancy") === "owner";
+  const house = data.get("building") === "Maison";
+  const fossil = ["Gaz", "Fioul"].includes(data.get("heating"));
+  const notes = [];
+  if (owner && house && fossil) notes.push("Votre situation correspond aux conditions de statut, de logement et de chauffage du leasing social. Reste à vérifier vos revenus avec le barème de l’Anah (ménages modestes ou très modestes).");
+  else {
+    notes.push("Votre situation ne correspond pas à toutes les conditions du leasing social (propriétaire occupant d’une maison chauffée au gaz ou au fioul, revenus modestes).");
+    if (!owner) notes.push("Le dispositif est réservé aux propriétaires occupants.");
+    if (!house) notes.push("Il concerne uniquement les maisons individuelles.");
+    if (!fossil) notes.push("Il vise le remplacement d’une chaudière gaz ou fioul.");
+    notes.push("D’autres solutions de pompe à chaleur peuvent exister : demandez une étude.");
+  }
+  notes.push(inRegion ? "Votre projet est situé dans notre zone d’intervention en Île-de-France." : "Votre code postal est hors de notre zone habituelle : contactez-nous pour vérifier.");
+  notes.push("Résultat indicatif : il ne confirme ni la faisabilité technique ni l’acceptation d’un financement.");
   result.replaceChildren();
   const paragraph = document.createElement("p");
   paragraph.textContent = notes.join(" ");
