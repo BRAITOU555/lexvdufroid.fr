@@ -1,10 +1,10 @@
 @media (max-width: 980px) {
   .installation-page .lp-hero {
     padding: 18px 0 22px !important;
-    color: #132235 !important;
+    color: #171a17 !important;
     background:
-      radial-gradient(420px 190px at 100% 0%, rgba(52, 109, 157, 0.12), transparent 65%),
-      linear-gradient(180deg, #ffffff 0%, #f3f7fb 100%) !important;
+      radial-gradient(420px 190px at 100% 0%, rgba(92, 122, 10, 0.12), transparent 65%),
+      linear-gradient(180deg, #ffffff 0%, #f5f7ee 100%) !important;
   }
 
   .installation-page .lp-hero-split {
@@ -21,9 +21,9 @@
     order: 2 !important;
     width: 100% !important;
     margin: 0 !important;
-    border: 1px solid rgba(19, 34, 53, 0.1) !important;
+    border: 1px solid rgba(23, 26, 23, 0.1) !important;
     border-radius: 14px !important;
-    box-shadow: 0 12px 26px rgba(19, 34, 53, 0.12) !important;
+    box-shadow: 0 12px 26px rgba(23, 26, 23, 0.12) !important;
   }
 
   .installation-page .lp-hero-media img {
@@ -41,22 +41,22 @@
   .installation-page .lp-slogan {
     margin: 0 0 9px !important;
     padding-left: 9px !important;
-    color: #254762 !important;
+    color: #171a17 !important;
     font-size: 0.72rem !important;
     line-height: 1.25 !important;
-    border-left: 2px solid #d7352a !important;
+    border-left: 2px solid #171a17 !important;
   }
 
   .installation-page .lp-eyebrow {
     margin-bottom: 7px !important;
     font-size: 0.58rem !important;
-    color: #d7352a !important;
+    color: #171a17 !important;
   }
 
   .installation-page .lp-hero h1 {
     max-width: 340px !important;
     margin-bottom: 9px !important;
-    color: #132235 !important;
+    color: #171a17 !important;
     font-size: 1.28rem !important;
     line-height: 1.1 !important;
     letter-spacing: -0.01em !important;
@@ -66,7 +66,7 @@
   .installation-page .lp-hero-lead {
     max-width: 360px !important;
     margin-bottom: 12px !important;
-    color: #44566a !important;
+    color: #626762 !important;
     font-size: 0.82rem !important;
     line-height: 1.44 !important;
   }
@@ -100,11 +100,11 @@
     display: block !important;
     min-height: 30px !important;
     padding: 7px 8px 7px 27px !important;
-    color: #18344d !important;
+    color: #171a17 !important;
     font-size: 0.66rem !important;
     line-height: 1.2 !important;
     background: #ffffff !important;
-    border: 1px solid rgba(19, 34, 53, 0.1) !important;
+    border: 1px solid rgba(23, 26, 23, 0.1) !important;
     border-radius: 9px !important;
   }
 

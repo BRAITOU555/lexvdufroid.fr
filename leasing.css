@@ -1,5 +1,5 @@
 /* Landing page PAC : tous les styles restent limités à cette page. */
-.leasing-page { --pac-navy: #122f44; --pac-red: #bd2e3c; --pac-paper: #f5f4ef; --pac-muted: #52616d; background: #fff; }
+.leasing-page { --pac-navy: #171a17; --pac-red: #171a17; --pac-paper: #f5f7ee; --pac-muted: #626762; background: #ffffff; }
 .leasing-page .lp {color: var(--pac-navy);}
 .leasing-page .lp-wrap {width: min(1180px, calc(100% - 64px));}
 .leasing-page .lp-section {padding: 88px 0;}
@@ -9,7 +9,7 @@
 .leasing-page .lp-eyebrow {font-size: .7rem; letter-spacing: .13em; font-weight: 750; color: var(--pac-red); margin-bottom: 18px;}
 .leasing-page .breadcrumb {background: var(--pac-paper); margin-bottom: 0;}
 .leasing-page section[id] {scroll-margin-top: 90px;}
-.leasing-page a:focus-visible, .leasing-page button:focus-visible, .leasing-page input:focus-visible, .leasing-page select:focus-visible, .leasing-page textarea:focus-visible, .leasing-page summary:focus-visible {outline: 3px solid #2e7ca6; outline-offset: 4px;}
+.leasing-page a:focus-visible, .leasing-page button:focus-visible, .leasing-page input:focus-visible, .leasing-page select:focus-visible, .leasing-page textarea:focus-visible, .leasing-page summary:focus-visible {outline: 3px solid #5c7a0a; outline-offset: 4px;}
 .leasing-page [hidden] {display: none !important;}
 /* Hero */
 .leasing-page .pac-hero {padding: 42px 0 64px; background: var(--pac-paper); color: var(--pac-navy); overflow: hidden;}
@@ -17,29 +17,29 @@
 .leasing-page .pac-tag {display: flex; align-items: center; gap: 10px; text-transform: uppercase; font-size: .66rem; letter-spacing: .12em; font-weight: 750; margin: 0 0 27px;}
 .leasing-page .pac-tag > span {height: 7px; width: 7px; background: var(--pac-red); border-radius: 50%;}
 .leasing-page .lp-hero h1 {font-size: clamp(2rem, 3.8vw, 3.45rem); line-height: 1.06; letter-spacing: -.065em; font-weight: 800; color: var(--pac-navy); margin: 0 0 24px; max-width: 660px; text-transform: none;}
-.leasing-page .lp-hero h1 em {font-style: normal; font-weight: 450; color: #556b78;}
+.leasing-page .lp-hero h1 em {font-style: normal; font-weight: 450; color: #626762;}
 .leasing-page .lp-hero-lead {color: var(--pac-muted); font-size: .98rem; max-width: 525px; line-height: 1.8; margin-bottom: 28px;}
 .leasing-page .lp-actions {display: flex; align-items: center; flex-wrap: wrap; gap: 22px;}
-.leasing-page .btn.btn-red {display: inline-flex; justify-content: center; align-items: center; gap: 20px; background: var(--pac-red); border-radius: 8px; padding: 16px 22px; min-height: 52px; width: auto; min-width: 0; font-size: .83rem; font-weight: 750; box-shadow: none; border: 0; color: #fff; text-decoration: none; cursor: pointer;}
-.leasing-page .btn.btn-red:hover {background: #98202e; transform: none;}
+.leasing-page .btn.btn-red {display: inline-flex; justify-content: center; align-items: center; gap: 20px; background: var(--pac-red); border-radius: 8px; padding: 16px 22px; min-height: 52px; width: auto; min-width: 0; font-size: .83rem; font-weight: 750; box-shadow: none; border: 0; color: #ffffff; text-decoration: none; cursor: pointer;}
+.leasing-page .btn.btn-red:hover {background: #171a17; transform: none;}
 .leasing-page .btn.btn-red:disabled {opacity: .65; cursor: wait;}
-.leasing-page .pac-text-link {display: inline-flex; align-items: center; gap: 14px; color: var(--pac-navy); font-size: .86rem; font-weight: 750; text-decoration: none; padding: 8px 0; border-bottom: 1px solid #b2bac0;}
+.leasing-page .pac-text-link {display: inline-flex; align-items: center; gap: 14px; color: var(--pac-navy); font-size: .86rem; font-weight: 750; text-decoration: none; padding: 8px 0; border-bottom: 1px solid #b8bfb1;}
 .leasing-page .pac-text-link:hover {color: var(--pac-red); border-color: var(--pac-red);}
-.leasing-page .leasing-hero-note {font-size: .73rem; color: #627480; margin: 15px 0 0;}
-.leasing-page .pac-hero-foot {display: flex; gap: 16px; flex-wrap: wrap; margin-top: 35px; padding-top: 20px; border-top: 1px solid #d6dcdf;}
+.leasing-page .leasing-hero-note {font-size: .73rem; color: #626762; margin: 15px 0 0;}
+.leasing-page .pac-hero-foot {display: flex; gap: 16px; flex-wrap: wrap; margin-top: 35px; padding-top: 20px; border-top: 1px solid #dfe4d3;}
 .leasing-page .pac-hero-foot span {font-size: .67rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em;}
 .leasing-page .pac-visual {min-width: 0; position: relative; padding-bottom: 50px;}
 .leasing-page .lp-hero-media {border: none; border-radius: 26px 26px 6px 6px; box-shadow: none; margin: 0;}
 .leasing-page .lp-hero-media img {width: 100%; height: 465px; aspect-ratio: auto; object-fit: cover; object-position: center;}
-.leasing-page .pac-visual-caption {position: absolute; bottom: 0; left: 24px; right: -16px; background: var(--pac-navy); color: #fff; border-radius: 10px; padding: 24px; display: flex; gap: 22px; align-items: center; box-shadow: 0 12px 26px #132d4218;}
-.leasing-page .pac-caption-number {font-size: .68rem; color: #a9bfcb; align-self: flex-start; padding-top: 4px;}
+.leasing-page .pac-visual-caption {position: absolute; bottom: 0; left: 24px; right: -16px; background: var(--pac-navy); color: #ffffff; border-radius: 10px; padding: 24px; display: flex; gap: 22px; align-items: center; box-shadow: 0 12px 26px #132d4218;}
+.leasing-page .pac-caption-number {font-size: .68rem; color: #b8bfb1; align-self: flex-start; padding-top: 4px;}
 .leasing-page .pac-visual-caption strong {font-size: 1.15rem; line-height: 1.3; font-weight: 600;}
-.leasing-page .pac-visual-caption p {font-size: .68rem; color: #b7c9d2; margin: 9px 0 0;}
-.leasing-page .pac-visual-caption a {margin-left: auto; color: #fff; text-decoration: none; font-size: 1.6rem;}
+.leasing-page .pac-visual-caption p {font-size: .68rem; color: #b8bfb1; margin: 9px 0 0;}
+.leasing-page .pac-visual-caption a {margin-left: auto; color: #ffffff; text-decoration: none; font-size: 1.6rem;}
 /* Sommaire */
-.leasing-page .leasing-toc {border-top: 1px solid #e1e5e7; border-bottom: 1px solid #e1e5e7; background: #fff;}
+.leasing-page .leasing-toc {border-top: 1px solid #dfe4d3; border-bottom: 1px solid #dfe4d3; background: #ffffff;}
 .leasing-page .leasing-toc .lp-wrap {display: flex; gap: 25px; align-items: center; padding-top: 21px; padding-bottom: 21px; overflow-x: auto; white-space: nowrap;}
-.leasing-page .leasing-toc a {font-size: .73rem; color: #51616c; text-decoration: none;}
+.leasing-page .leasing-toc a {font-size: .73rem; color: #626762; text-decoration: none;}
 .leasing-page .leasing-toc a:hover {color: var(--pac-red);}
 .leasing-page .leasing-toc .lp-wrap > span {font-size: .69rem; font-weight: 800; color: var(--pac-navy); margin-right: 10px;}
 .leasing-page .leasing-toc .pac-toc-cta {margin-left: auto; font-weight: 800; color: var(--pac-red);}
@@ -51,107 +51,107 @@
 .leasing-page .pac-prose > p {margin: 0 0 22px;}
 .leasing-page .pac-prose strong {font-weight: 700; color: var(--pac-navy);}
 .leasing-page .pac-prose a {color: var(--pac-navy); text-underline-offset: 4px;}
-.leasing-page .pac-callout {margin: 25px 0; padding: 24px; border-radius: 10px; background: #eef3f5; border-left: 3px solid #315b70;}
+.leasing-page .pac-callout {margin: 25px 0; padding: 24px; border-radius: 10px; background: #f5f7ee; border-left: 3px solid #626762;}
 .leasing-page .pac-callout p {margin: 9px 0 0; font-size: .87rem;}
-.leasing-page .pac-callout-warm {background: #fff4ec; border-left-color: #bb6744;}
+.leasing-page .pac-callout-warm {background: #f5f7ee; border-left-color: #171a17;}
 .leasing-page .leasing-tint {background: var(--pac-paper);}
 .leasing-page .pac-section-top {display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; margin-bottom: 35px;}
 .leasing-page .pac-criteria {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px;}
-.leasing-page .pac-criteria article {background: #fff; border: 1px solid #e6e8e5; padding: 20px; border-radius: 10px; display: flex; flex-direction: column;}
+.leasing-page .pac-criteria article {background: #ffffff; border: 1px solid #dfe4d3; padding: 20px; border-radius: 10px; display: flex; flex-direction: column;}
 .leasing-page .pac-card-index {font-size: .75rem; color: var(--pac-red); font-weight: 750; margin-bottom: 14px;}
 .leasing-page .pac-criteria h3 {font-size: 1.15rem; margin: 0 0 10px;}
 .leasing-page .pac-criteria p {color: var(--pac-muted); font-size: .89rem; margin: 0 0 14px;}
-.leasing-page .pac-card-label {border-top: 1px solid #e1e6e9; padding-top: 10px; font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; color: #778893; margin-top: auto;}
-.leasing-page .pac-income {display: grid; grid-template-columns: .85fr 1.15fr; gap: 65px; padding-top: 48px; margin-top: 45px; border-top: 1px solid #d9dddd; align-items: start;}
+.leasing-page .pac-card-label {border-top: 1px solid #dfe4d3; padding-top: 10px; font-size: .66rem; text-transform: uppercase; letter-spacing: .1em; color: #626762; margin-top: auto;}
+.leasing-page .pac-income {display: grid; grid-template-columns: .85fr 1.15fr; gap: 65px; padding-top: 48px; margin-top: 45px; border-top: 1px solid #dfe4d3; align-items: start;}
 .leasing-page .pac-income h3 {font-size: 1.35rem; margin: 0 0 15px;}
 .leasing-page .pac-income p {color: var(--pac-muted); font-size: .88rem; max-width: 330px;}
 .leasing-page .pac-income a {color: var(--pac-navy); font-size: .8rem; text-underline-offset: 4px;}
 .leasing-page .leasing-table-wrap {overflow-x: auto; margin: 0;}
 .leasing-page .leasing-table {width: 100%; border-collapse: collapse; font-size: .85rem; background: transparent;}
 .leasing-page .leasing-table caption {text-align: left; font-size: .7rem; color: var(--pac-muted); margin-bottom: 15px;}
-.leasing-page .leasing-table th, .leasing-page .leasing-table td {text-align: left; padding: 12px 0; border-bottom: 1px solid #d9dddd; line-height: 1.5;}
-.leasing-page .leasing-table thead th {font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: #657681; font-weight: 650;}
+.leasing-page .leasing-table th, .leasing-page .leasing-table td {text-align: left; padding: 12px 0; border-bottom: 1px solid #dfe4d3; line-height: 1.5;}
+.leasing-page .leasing-table thead th {font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: #626762; font-weight: 650;}
 .leasing-page .leasing-table tbody th {font-weight: 450;}
 .leasing-page .leasing-table td {font-weight: 750; text-align: right;}
 .leasing-page .leasing-table thead th:last-child {text-align: right;}
 .leasing-page .pac-budget-grid {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 36px;}
 .leasing-page .pac-budget-grid article {border-top: 2px solid var(--pac-navy); padding-top: 14px;}
-.leasing-page .pac-budget-grid article > span {font-size: .68rem; text-transform: uppercase; color: #6c7e89;}
+.leasing-page .pac-budget-grid article > span {font-size: .68rem; text-transform: uppercase; color: #626762;}
 .leasing-page .pac-budget-grid h3 {font-size: 1.08rem; margin: 10px 0 8px;}
 .leasing-page .pac-budget-grid p {font-size: .86rem; color: var(--pac-muted);}
 /* Section sombre */
-.leasing-page .pac-dark {background: var(--pac-navy); color: #fff;}
-.leasing-page .pac-dark h2 {color: #fff;}
-.leasing-page .pac-dark .lp-eyebrow {color: #df9c90;}
-.leasing-page .pac-dark .pac-section-top > p {max-width: 320px; color: #b6c8d3; font-size: .9rem;}
+.leasing-page .pac-dark {background: var(--pac-navy); color: #ffffff;}
+.leasing-page .pac-dark h2 {color: #ffffff;}
+.leasing-page .pac-dark .lp-eyebrow {color: #d5ef4b;}
+.leasing-page .pac-dark .pac-section-top > p {max-width: 320px; color: #b8bfb1; font-size: .9rem;}
 .leasing-page .pac-inclusions {display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin-top: 30px;}
 .leasing-page .pac-inclusions article {border-top: 1px solid #ffffff40; padding-top: 12px;}
-.leasing-page .pac-inclusions article > span {font-size: .7rem; color: #b7c6cf;}
-.leasing-page .pac-inclusions h3 {font-size: 1rem; margin: 12px 0 8px; color: #fff;}
-.leasing-page .pac-inclusions p {font-size: .8rem; color: #b7c6cf;}
-.leasing-page .pac-dark-note {font-size: .75rem; margin: 35px 0 0; color: #b7c6cf;}
-.leasing-page .pac-dark-note a {color: #fff; text-underline-offset: 4px;}
+.leasing-page .pac-inclusions article > span {font-size: .7rem; color: #b8bfb1;}
+.leasing-page .pac-inclusions h3 {font-size: 1rem; margin: 12px 0 8px; color: #ffffff;}
+.leasing-page .pac-inclusions p {font-size: .8rem; color: #b8bfb1;}
+.leasing-page .pac-dark-note {font-size: .75rem; margin: 35px 0 0; color: #b8bfb1;}
+.leasing-page .pac-dark-note a {color: #ffffff; text-underline-offset: 4px;}
 .leasing-page .pac-choice {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 24px 0;}
-.leasing-page .pac-choice article {padding: 16px; border: 1px solid #dce4e8; border-radius: 10px;}
-.leasing-page .pac-choice span {font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; color: #6d818c;}
+.leasing-page .pac-choice article {padding: 16px; border: 1px solid #dfe4d3; border-radius: 10px;}
+.leasing-page .pac-choice span {font-size: .65rem; letter-spacing: .08em; text-transform: uppercase; color: #626762;}
 .leasing-page .pac-choice h3 {color: var(--pac-navy); font-size: 1rem; margin: 10px 0 8px;}
 .leasing-page .pac-choice p {font-size: .83rem; margin: 0;}
 .leasing-page .leasing-steps {display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 30px;}
 .leasing-page .leasing-steps article {padding: 0; background: transparent; border: 0; border-radius: 0;}
-.leasing-page .leasing-steps article > span {display: block; font-size: 1.8rem; color: #a5b3bc; letter-spacing: -.08em; font-weight: 450; margin-bottom: 14px;}
+.leasing-page .leasing-steps article > span {display: block; font-size: 1.8rem; color: #b8bfb1; letter-spacing: -.08em; font-weight: 450; margin-bottom: 14px;}
 .leasing-page .leasing-steps h3 {font-size: 1.05rem; margin: 0 0 10px;}
 .leasing-page .leasing-steps p {font-size: .88rem; color: var(--pac-muted); margin: 0;}
 /* Région */
 .leasing-page .pac-local {display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;}
 .leasing-page .leasing-intro {line-height: 1.8; font-size: .95rem; color: var(--pac-muted); margin: 24px 0;}
 .leasing-page .pac-local p:not(.lp-eyebrow) {font-size: .9rem; color: var(--pac-muted);}
-.leasing-page .pac-departments {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; padding: 22px; background: #f4f7f8; border-radius: 14px;}
-.leasing-page .pac-map-label {grid-column: 1 / -1; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 20px; color: #6d818b;}
-.leasing-page .pac-departments > div {display: flex; align-items: center; gap: 13px; border-top: 1px solid #dce4e8; padding: 12px 0;}
-.leasing-page .pac-departments > div > span {color: #8ba0ad; font-size: 1.2rem; font-weight: 500;}
+.leasing-page .pac-departments {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; padding: 22px; background: #f5f7ee; border-radius: 14px;}
+.leasing-page .pac-map-label {grid-column: 1 / -1; font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 20px; color: #626762;}
+.leasing-page .pac-departments > div {display: flex; align-items: center; gap: 13px; border-top: 1px solid #dfe4d3; padding: 12px 0;}
+.leasing-page .pac-departments > div > span {color: #b8bfb1; font-size: 1.2rem; font-weight: 500;}
 .leasing-page .pac-departments strong {font-size: .77rem; font-weight: 650;}
 /* Formulaires */
 .leasing-page .pac-form-layout {display: grid; grid-template-columns: .85fr 1.15fr; gap: 80px; align-items: start;}
-.leasing-page .pac-eligibility-section {background: #eef4f6;}
-.leasing-page .lp-form {background: #fff; border: 1px solid #dae3e8; border-radius: 14px; padding: 32px; gap: 22px; box-shadow: 0 16px 40px #142f4408;}
+.leasing-page .pac-eligibility-section {background: #f5f7ee;}
+.leasing-page .lp-form {background: #ffffff; border: 1px solid #dfe4d3; border-radius: 14px; padding: 32px; gap: 22px; box-shadow: 0 16px 40px #142f4408;}
 .leasing-page .lp-form label {font-size: .75rem; font-weight: 650; gap: 9px; color: var(--pac-navy); min-width: 0;}
-.leasing-page .lp-form input, .leasing-page .lp-form select, .leasing-page .lp-form textarea {font-size: .85rem; padding: 13px; border-radius: 6px; border-color: #d3dee4; min-width: 0; background: #fafcfd; color: var(--pac-navy);}
+.leasing-page .lp-form input, .leasing-page .lp-form select, .leasing-page .lp-form textarea {font-size: .85rem; padding: 13px; border-radius: 6px; border-color: #dfe4d3; min-width: 0; background: #fafcfd; color: var(--pac-navy);}
 .leasing-page .lp-form .btn {justify-self: stretch; width: 100%; margin: 0;}
 .leasing-page .leasing-fields {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px;}
-.leasing-page .pac-form-title {display: flex; align-items: center; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #e3eaee;}
-.leasing-page .pac-form-title > span {background: var(--pac-navy); color: #fff; padding: 8px 10px; border-radius: 5px; font-size: .7rem;}
+.leasing-page .pac-form-title {display: flex; align-items: center; gap: 12px; padding-bottom: 20px; border-bottom: 1px solid #dfe4d3;}
+.leasing-page .pac-form-title > span {background: var(--pac-navy); color: #ffffff; padding: 8px 10px; border-radius: 5px; font-size: .7rem;}
 .leasing-page .pac-form-title h3 {font-size: 1.05rem; margin: 0;}
-.leasing-page .pac-form-title small {margin-left: auto; color: #6f818c; font-size: .7rem;}
-.leasing-page .pac-side-note {display: flex; gap: 18px; margin: 30px 0; padding-top: 25px; border-top: 1px solid #cfdee5;}
-.leasing-page .pac-side-note > span {font-size: 1.5rem; color: #527991;}
+.leasing-page .pac-form-title small {margin-left: auto; color: #626762; font-size: .7rem;}
+.leasing-page .pac-side-note {display: flex; gap: 18px; margin: 30px 0; padding-top: 25px; border-top: 1px solid #dfe4d3;}
+.leasing-page .pac-side-note > span {font-size: 1.5rem; color: #626762;}
 .leasing-page .pac-side-note p {font-size: .83rem; color: var(--pac-muted); margin: 0;}
-.leasing-page .leasing-result {padding: 22px; background: #eef5f4; border-left: 3px solid #477a70; border-radius: 6px;}
+.leasing-page .leasing-result {padding: 22px; background: #f5f7ee; border-left: 3px solid #477a70; border-radius: 6px;}
 .leasing-page .leasing-result p {font-size: .85rem; margin: 0;}
 .leasing-page .leasing-result a {display: inline-block; color: var(--pac-navy); font-size: .8rem; font-weight: 700; margin-top: 16px;}
 .leasing-page .pac-study-section {background: var(--pac-paper);}
 .leasing-page .pac-study-copy {position: sticky; top: 35px;}
 .leasing-page .pac-checklist {list-style: none; padding: 0; margin: 28px 0;}
-.leasing-page .pac-checklist li {border-bottom: 1px solid #d9dddd; padding: 15px 0; font-size: .86rem; display: flex; align-items: center; gap: 12px;}
+.leasing-page .pac-checklist li {border-bottom: 1px solid #dfe4d3; padding: 15px 0; font-size: .86rem; display: flex; align-items: center; gap: 12px;}
 .leasing-page .pac-checklist li::before {content: '✓'; color: #567a6d;}
 .leasing-page .pac-contact {display: flex; flex-direction: column; margin: 35px 0 20px; gap: 9px;}
-.leasing-page .pac-contact > span, .leasing-page .pac-contact small {font-size: .75rem; color: #6b7d87;}
+.leasing-page .pac-contact > span, .leasing-page .pac-contact small {font-size: .75rem; color: #626762;}
 .leasing-page .pac-contact a {color: var(--pac-navy); font-size: 1.9rem; letter-spacing: -.05em; text-decoration: none; font-weight: 700;}
-.leasing-page .leasing-note {font-size: .7rem; line-height: 1.7; color: #5c707b; margin: 0;}
+.leasing-page .leasing-note {font-size: .7rem; line-height: 1.7; color: #626762; margin: 0;}
 .leasing-page .leasing-note a {color: var(--pac-navy); overflow-wrap: anywhere;}
 .leasing-page .lp-form .leasing-consent {display: flex; align-items: flex-start; gap: 12px; line-height: 1.7; font-weight: 450;}
 .leasing-page .leasing-consent input {width: 18px; height: 18px; flex: 0 0 18px; margin-top: 3px;}
 /* FAQ et liens */
 .leasing-page .leasing-faq {margin: 0;}
-.leasing-page .leasing-faq details {padding: 20px 0; border-bottom: 1px solid #dce4e8;}
-.leasing-page .leasing-faq details:first-child {border-top: 1px solid #dce4e8;}
+.leasing-page .leasing-faq details {padding: 20px 0; border-bottom: 1px solid #dfe4d3;}
+.leasing-page .leasing-faq details:first-child {border-top: 1px solid #dfe4d3;}
 .leasing-page .leasing-faq summary {display: flex; justify-content: space-between; gap: 24px; cursor: pointer; font-size: .93rem; font-weight: 650; line-height: 1.5; list-style: none;}
 .leasing-page .leasing-faq summary::-webkit-details-marker {display: none;}
-.leasing-page .leasing-faq summary::after {content: '+'; font-size: 1.25rem; color: #79919f; font-weight: 450;}
+.leasing-page .leasing-faq summary::after {content: '+'; font-size: 1.25rem; color: #626762; font-weight: 450;}
 .leasing-page .leasing-faq details[open] summary::after {content: '−';}
 .leasing-page .leasing-faq p {font-size: .86rem; color: var(--pac-muted); margin: 18px 0 0;}
-.leasing-page .pac-related {padding: 30px 0; border-top: 1px solid #e2e7ea;}
+.leasing-page .pac-related {padding: 30px 0; border-top: 1px solid #dfe4d3;}
 .leasing-page .pac-related .lp-wrap {display: flex; align-items: center; gap: 30px; flex-wrap: wrap;}
-.leasing-page .pac-related .lp-wrap > span {font-size: .7rem; color: #708490; margin-right: auto;}
+.leasing-page .pac-related .lp-wrap > span {font-size: .7rem; color: #626762; margin-right: auto;}
 .leasing-page .pac-related a {display: flex; align-items: center; gap: 20px; font-size: .8rem; font-weight: 650; color: var(--pac-navy); text-decoration: none;}
 @media (max-width: 1000px) {
  .leasing-page .lp-hero-split {gap: 30px;}
@@ -200,7 +200,7 @@
  .leasing-page .pac-choice {gap: 12px;}
  .leasing-page .pac-choice article {padding: 14px;}
  .leasing-page .leasing-steps {grid-template-columns: 1fr; gap: 26px; margin-top: 30px;}
- .leasing-page .leasing-steps article {border-top: 1px solid #d9dddd; padding-top: 20px;}
+ .leasing-page .leasing-steps article {border-top: 1px solid #dfe4d3; padding-top: 20px;}
  .leasing-page .leasing-steps article > span {font-size: 1.65rem; margin-bottom: 14px;}
  .leasing-page .pac-departments {padding: 18px; gap: 0 14px;}
  .leasing-page .pac-departments strong {font-size: .72rem;}
