@@ -159,3 +159,71 @@ a{text-decoration-color:var(--lime)}
 .lp-final .lp-eyebrow,.home-page .lp-final .lp-eyebrow,.pac-dark .lp-eyebrow{color:var(--lime)}
 
 .leasing-page .pac-hero-foot span{padding:6px 14px}
+
+/* =====================================================================
+   Bandeau défilant + ticket « devis clair avant travaux » (façon Virage)
+   ===================================================================== */
+.vg-ticker{background:var(--ink);color:var(--lime);overflow:hidden;white-space:nowrap;padding:12px 0}
+.vg-ticker-track{display:inline-flex;gap:28px;font:700 22px 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.02em;animation:vg-marquee 38s linear infinite;will-change:transform}
+.vg-ticker-track i{font-style:normal;color:#fff}
+@keyframes vg-marquee{to{transform:translateX(-50%)}}
+
+.vg-ticket{--cut:16px;position:relative;background:#171a17;color:#fff;border-radius:22px;padding:26px 28px 22px;transform:rotate(-3deg);box-shadow:10px 12px 0 #d5ef4b;max-width:400px;width:100%;justify-self:center;
+  -webkit-mask:radial-gradient(circle var(--cut) at 0 62%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle var(--cut) at 100% 62%,transparent 98%,#000) right/51% 100% no-repeat;
+  mask:radial-gradient(circle var(--cut) at 0 62%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle var(--cut) at 100% 62%,transparent 98%,#000) right/51% 100% no-repeat}
+.vg-ticket-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#cfd5c8}
+.vg-ticket-top b{font:800 20px 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.03em;color:#fff}
+.vg-ticket-top span{border:1px dashed #6b7366;border-radius:99px;padding:2px 10px}
+.vg-ticket-main{padding:34px 0 24px;border-bottom:2px dashed #4a5148}
+.vg-ticket-main strong{display:block;font:800 clamp(2rem,3.6vw,2.8rem)/.98 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.04em;color:#d5ef4b}
+.vg-ticket-main span{display:block;margin-top:12px;font-size:14px;color:#cfd5c8}
+.vg-ticket-bar{height:38px;margin:20px 0 12px;background:repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 5px,#fff 5px 6px,transparent 6px 11px,#fff 11px 14px,transparent 14px 17px);opacity:.85;border-radius:3px}
+.vg-ticket-foot{font-size:11.5px;color:#aab1a3}
+.vg-ticket-band{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:5%;align-items:center;max-width:1140px;margin:0 auto;padding:72px 5%}
+.vg-ticket-copy h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin:0 0 14px;line-height:1.02}
+.vg-ticket-copy p:not(.lp-eyebrow){max-width:480px;margin:0 0 22px;font-size:16px;line-height:1.65;color:var(--muted)}
+.vg-ticket-actions{display:flex;flex-wrap:wrap;gap:12px}
+.vg-ticket-actions .btn{min-height:52px;min-width:0;padding:12px 22px;gap:10px}
+@media(max-width:980px){
+  .vg-ticket-band{grid-template-columns:1fr;gap:44px;padding:52px 6%}
+  .vg-ticket{max-width:340px;box-shadow:7px 8px 0 #d5ef4b}
+}
+@media(max-width:760px){
+  .vg-ticker-track{font-size:18px;gap:22px}
+  .vg-ticket-actions{flex-direction:column}
+  .vg-ticket-actions .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.vg-ticker-track{animation:none!important}}
+
+/* =====================================================================
+   Menu : bouton d'appel (bureau) et menu hamburger refait (mobile)
+   ===================================================================== */
+@media(min-width:981px){
+  .nav{align-items:center}
+  .nav a.nav-cta{background:var(--ink);color:#fff!important;border:2px solid var(--ink);border-radius:99px;padding:8px 16px;margin-left:6px;font-size:.66rem;font-weight:800;letter-spacing:.02em;white-space:nowrap;transition:transform .18s,box-shadow .18s}
+  .nav a.nav-cta:hover{transform:translate(-2px,-2px);box-shadow:3px 4px 0 var(--lime);background:var(--ink)}
+  .nav a.nav-cta::after{display:none}
+}
+@media(max-width:980px){
+  .site-header{grid-template-columns:1fr auto;min-height:68px;padding:8px 16px;overflow:visible}
+  .hamburger{width:50px;height:50px;gap:5px;border:2px solid var(--ink);border-radius:15px;background:var(--lime);box-shadow:3px 4px 0 var(--ink);transition:transform .18s,box-shadow .18s,background .18s}
+  .hamburger:hover{transform:translate(-1px,-1px);box-shadow:4px 5px 0 var(--ink)}
+  .hamburger span{width:22px;height:3px;border-radius:3px;background:var(--ink);transition:transform .25s cubic-bezier(.2,.8,.2,1),opacity .2s,background .2s}
+  .menu-toggle:checked ~ .hamburger{background:var(--ink);box-shadow:none;transform:translate(3px,4px)}
+  .menu-toggle:checked ~ .hamburger span{background:var(--lime)}
+  .menu-toggle:checked ~ .hamburger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+  .menu-toggle:checked ~ .hamburger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+  .nav{justify-items:stretch;justify-content:stretch;grid-template-columns:minmax(0,1fr);position:absolute;left:12px;right:12px;top:calc(100% + 6px);margin:0;padding:10px;gap:4px;max-height:calc(100vh - 110px);max-height:calc(100dvh - 110px);overflow-y:auto;background:#fff;border:2px solid var(--ink);border-radius:26px;box-shadow:8px 10px 0 var(--lime)}
+  .menu-toggle:checked ~ .nav{animation:vg-menu .28s cubic-bezier(.2,.8,.2,1) both}
+  .nav a{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border:2px solid transparent;border-radius:16px;font-family:var(--display);font-size:1.12rem;font-weight:700;letter-spacing:-.02em;text-transform:none;color:var(--ink);background:none}
+  .nav a::after,.nav a.active::after{content:"→";position:static;display:block;width:auto;height:auto;background:none;font-family:'DM Sans',system-ui,sans-serif;font-size:1.05rem;opacity:.3;transition:transform .2s,opacity .2s}
+  .nav a:hover,.nav a.active{background:var(--lime);border-color:var(--ink);color:var(--ink)}
+  .nav a:hover::after,.nav a.active::after{opacity:1;transform:translateX(3px)}
+  .nav a.nav-cta{justify-content:center;gap:8px;margin-top:6px;padding:15px 16px;border-radius:99px;background:var(--ink);border-color:var(--ink);color:#fff;font-size:1.05rem;font-weight:800}
+  .nav a.nav-cta::after{display:none}
+  .nav a.nav-cta:hover{background:var(--ink);color:#fff;box-shadow:3px 4px 0 var(--lime)}
+  html.menu-open body::after{content:'';position:fixed;inset:0;z-index:25;background:rgba(23,26,23,.45);animation:vg-fade .25s both}
+}
+@keyframes vg-menu{from{opacity:0;transform:translateY(-10px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes vg-fade{from{opacity:0}to{opacity:1}}
