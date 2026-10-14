@@ -100,7 +100,22 @@ entretien climatiseur mural|10 – 100|Moyen
 réparation climatiseur mural|10 – 100|Élevé
 dépannage pompe à chaleur daikin|100 – 1 k|Moyen
 réparation climatiseur|100 – 1 k|Moyen
-installation air climatisé mural|10 – 100|Faible"""
+installation air climatisé mural|10 – 100|Faible
+climatisation code erreur|10 – 100|Faible
+climatisation fuite d eau|10 – 100|Faible
+climatisation ne refroidit plus|10 – 100|Faible
+contrat entretien clim reversible|10 – 100|Moyen
+contrat entretien climatisation|100 – 1 k|Moyen
+depannage clim|1 k – 10 k|Moyen
+depannage climatisation urgence|10 – 100|Moyen
+depannage climatiseur|100 – 1 k|Moyen
+entretien annuel climatisation|100 – 1 k|Moyen
+entretien climatisation obligatoire|100 – 1 k|Faible
+entretien climatiseur|100 – 1 k|Moyen
+recharge gaz climatisation|100 – 1 k|Élevé
+reparation climatisation urgence|10 – 100|Élevé
+reparation climatiseur|100 – 1 k|Moyen
+urgence climatisation|10 – 100|Moyen"""
 
 # Mots clés avec ville : volumes remontés par Keyword Planner (France). Les autres combinaisons testées sont sans volume affiché.
 LOCAL = """climatisation 78|100 – 1 k|Élevé
@@ -123,6 +138,11 @@ climatisation sartrouville|10 – 100|Élevé
 climatisation versailles|10 – 100|Élevé
 climatisation yvelines|10 – 100|Élevé
 depannage climatisation 78|10 – 100|Élevé
+depannage climatisation trappes|10 – 100|—
+entretien climatisation versailles|10 – 100|Moyen
+entretien climatisation yvelines|10 – 100|Élevé
+entretien climatisation trappes|0 – 10|—
+installation climatisation trappes|10 – 100|Élevé
 climatisation trappes|10 – 100|Élevé
 climatisation la celle saint cloud|10 – 100|Élevé
 climatisation viroflay|10 – 100|Élevé

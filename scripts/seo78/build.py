@@ -19,12 +19,21 @@ def load_pages():
     return out
 
 TOWNS = load_pages()
+TYPE_OF = {"poissy": "depannage", "les-mureaux": "depannage", "conflans-sainte-honorine": "entretien", "la-celle-saint-cloud": "entretien", "yvelines-78": "hub"}
+for t in TOWNS:
+    t.setdefault("town", t["slug"])
+    t.setdefault("type", TYPE_OF.get(t["slug"], "installation"))
+    if t["slug"] == "yvelines-78": t["file"] = "climatisation-yvelines-78.html"
 BY = {t["slug"]: t for t in TOWNS}
 assert len(BY) == len(TOWNS), "slug en double"
 
+gen2.PAGEFILES = {gen2.fname(t) for t in TOWNS}
+gen2.RENAMED = {f"installation-climatisation-{t['town']}.html": gen2.fname(t) for t in TOWNS if t["type"] in ("depannage", "entretien")}
+
 # --- page départementale : liens vers chaque ville
 hub = BY["yvelines-78"]
-town_links = [(gen2.fname(t), "Climatisation " + t["name"]) for t in TOWNS if t["slug"] != "yvelines-78"]
+_order = ["installation", "depannage", "entretien", "urgence"]
+town_links = [(gen2.fname(t), maillage.anchor_of(t)) for t in sorted((x for x in TOWNS if x["slug"] != "yvelines-78"), key=lambda x: (maillage.RING.index(x["town"]), _order.index(x["type"])))]
 hub["blocks"].insert(1, ("links", "Pages locales", "Une page par ville", "Chaque page parle de sa commune et de ses habitudes de pose.", town_links))
 
 # --- un mot clé = une seule page
@@ -78,6 +87,7 @@ for t in TOWNS:
         if not norm_kw_ok(t, k): errs.append((t["slug"], "mot-clé hors relevé", k))
     for h, _ in t["near"]:
         if h.startswith("../"): continue
+        h = gen2.resolve(h)
         if h not in {gen2.fname(x) for x in TOWNS} and not os.path.exists(os.path.join(gen2.REPO, "zones", h)):
             errs.append((t["slug"], "lien cassé", h))
 if errs:
@@ -85,44 +95,52 @@ if errs:
     sys.exit(1)
 
 def publish():
-    # --- écriture des pages
+    R = gen2.REPO
+    # pages représentant chaque ville (liens de pied de page, zones.html)
+    order = ["installation", "depannage", "entretien", "urgence"]
+    rep = {}
+    for t in sorted((x for x in TOWNS if x["slug"] != "yvelines-78"), key=lambda x: order.index(x["type"])):
+        rep.setdefault(t["town"], t)
+    reps = [rep[s_] for s_ in maillage.RING if s_ in rep]
+
+    # fichiers périmés (page renommée ou supprimée)
+    sm_path = os.path.join(R, "sitemap.xml")
+    sm = open(sm_path, encoding="utf-8").read()
+    for f in glob.glob(os.path.join(R, "zones", "*.html")):
+        b = os.path.basename(f)
+        if re.match(r"^(installation|depannage|entretien|urgence)-climatisation-", b) and "paris" not in b and b not in gen2.PAGEFILES:
+            os.remove(f); print("supprimé (renommé)", b)
+            sm = re.sub(r"[ \t]*<url><loc>https://lexvdufroid\.fr/zones/" + re.escape(b) + r"</loc>.*?</url>\n", "", sm)
+
     gen2.write_all(TOWNS)
 
-    # --- sitemap
-    R = gen2.REPO
-    sm = open(os.path.join(R, "sitemap.xml"), encoding="utf-8").read()
     today = datetime.date.today().isoformat()
     add = ""
     for t in TOWNS:
         loc = f"https://lexvdufroid.fr/zones/{gen2.fname(t)}"
         if loc not in sm:
             add += f'  <url><loc>{loc}</loc><lastmod>{t.get("date", today)}</lastmod></url>\n'
-    if add:
-        sm = sm.replace("</urlset>", add + "</urlset>", 1)
-        open(os.path.join(R, "sitemap.xml"), "w", encoding="utf-8").write(sm)
+    if add: sm = sm.replace("</urlset>", add + "</urlset>", 1)
+    open(sm_path, "w", encoding="utf-8").write(sm)
 
-    # --- zones.html : liste des villes du 78
     zp = os.path.join(R, "zones.html")
     z = open(zp, encoding="utf-8").read()
-    items = ",\n".join(f'                  <a href="zones/{gen2.fname(t)}">{t["name"]}</a>' for t in TOWNS if t["slug"] != "yvelines-78") + "."
-    z2 = re.sub(r'(<p class="zones-inline-links">\s*Pages locales :\s*\n)(\s*<a href="zones/installation-climatisation-versailles\.html">.*?)(\n\s*</p>)',
+    items = ",\n".join(f'                  <a href="zones/{gen2.fname(t)}">{t["name"]}</a>' for t in reps) + "."
+    z2 = re.sub(r'(<p class="zones-inline-links">\s*Pages locales :\s*\n)(\s*<a href="zones/(?:installation|depannage|entretien|urgence)-climatisation-versailles\.html">.*?)(\n\s*</p>)',
                 lambda m: m.group(1) + items + m.group(3), z, count=1, flags=re.S)
     if z2 != z: open(zp, "w", encoding="utf-8").write(z2)
 
-    # --- pieds de page "Yvelines" sur tout le site
-    towns = [("climatisation-yvelines-78.html", "Climatisation Yvelines (78)")] + \
-            [(gen2.fname(t), maillage.ANCH[t["slug"]].split(" : ")[0]) for t in sorted((x for x in TOWNS if x["slug"] != "yvelines-78"), key=lambda x: maillage.RING.index(x["slug"]))]
+    towns = [("climatisation-yvelines-78.html", "Climatisation Yvelines (78)")] + [(gen2.fname(t), maillage.anchor_of(t).split(" : ")[0]) for t in reps]
     n = 0
     for f in glob.glob(R + "/*.html") + glob.glob(R + "/articles/*.html") + glob.glob(R + "/zones/*.html"):
-        t = open(f, encoding="utf-8").read()
-        if 'class="footer-yvelines"' not in t: continue
+        t_ = open(f, encoding="utf-8").read()
+        if 'class="footer-yvelines"' not in t_: continue
         rel = os.path.relpath(f, R)
         pre = "" if rel.startswith("zones/") else ("../zones/" if rel.startswith("articles/") else "zones/")
         lis = "".join(f'<a href="{pre}{h}">{l}</a>' for h, l in towns)
-        t2 = re.sub(r'(<nav class="footer-yvelines"[^>]*><h3>[^<]*</h3><p>).*?(</p></nav>)', lambda m: m.group(1) + lis + m.group(2), t, flags=re.S)
-        if t2 != t: open(f, "w", encoding="utf-8").write(t2); n += 1
+        t2 = re.sub(r'(<nav class="footer-yvelines"[^>]*><h3>[^<]*</h3><p>).*?(</p></nav>)', lambda m: m.group(1) + lis + m.group(2), t_, flags=re.S)
+        if t2 != t_: open(f, "w", encoding="utf-8").write(t2); n += 1
     print("pieds de page mis à jour :", n)
-
 
 if __name__ == "__main__":
     publish()

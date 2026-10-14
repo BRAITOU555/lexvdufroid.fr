@@ -47,28 +47,49 @@ try:
 except ImportError:
     pass
 
+TYPES = ["installation", "depannage", "entretien", "urgence"]
+TYPE_LABEL = {"installation": "Installation", "depannage": "Dépannage", "entretien": "Entretien", "urgence": "Urgence"}
+
+def anchor_of(t):
+    return t.get("anchor") or ANCH[t["slug"]]
+
 def apply(TOWNS):
-    idx = {s:i for i,s in enumerate(RING)}
     N = len(RING)
+    idx = {s: i for i, s in enumerate(RING)}
+    dist = lambda a, b: min((idx[a] - idx[b]) % N, (idx[b] - idx[a]) % N)
+    pages = [t for t in TOWNS if t["slug"] != "yvelines-78"]
     for k, t in enumerate(TOWNS):
-        s = t["slug"]
-        if s == "yvelines-78":
-            others = [x for x in TOWNS if x["slug"] != s]
-            hubl = []
-        else:
-            me = idx[s]
-            others = sorted([x for x in TOWNS if x["slug"] not in (s, "yvelines-78")],
-                            key=lambda x: min((idx[x["slug"]]-me) % N, (me-idx[x["slug"]]) % N))
-            hubl = [("climatisation-yvelines-78.html", "Climatisation dans les Yvelines (78) : installation, dépannage, entretien")]
-        items = hubl + [(gen2.fname(x), ANCH[x["slug"]]) for x in others] if s != "yvelines-78" else []
-        blocks = list(t["blocks"])
-        pos = len(blocks) - 1  # avant "zone"
+        if t["slug"] == "yvelines-78":
+            add = [("links", "Nos services", "Aller plus loin sur la climatisation",
+                    "Les pages du site qui complètent celle-ci : services, guides pratiques et devis.", SERV + [ART[0], ART[2]])]
+            blocks = list(t["blocks"]); pos = len(blocks) - 1
+            t["blocks"] = blocks[:pos] + add + blocks[pos:]
+            continue
+        town, typ = t["town"], t["type"]
         add = []
-        if items:
-            add.append(("links", "Autour de chez vous", "Les autres villes des Yvelines où nous intervenons",
-                        "Chaque page décrit un besoin précis. Si vous êtes à la limite de deux communes, lisez aussi celle d’à côté.", items))
-        a1 = ART[(k) % 5]; a2 = ART[(k+2) % 5]
-        sv = SERV[:]
+        # 1) les autres services dans la même ville
+        sib = sorted([x for x in pages if x["town"] == town and x is not t], key=lambda x: TYPES.index(x["type"]))
+        items = [(gen2.fname(x), anchor_of(x)) for x in sib] + [("climatisation-yvelines-78.html", "Climatisation dans les Yvelines (78) : installation, dépannage, entretien, urgence")]
+        add.append(("links", "Dans votre ville", f"Les autres services à {t['name']}",
+                    "Un besoin différent, une page différente : dépannage, entretien, installation ou urgence.", items))
+        # 2) même service dans les villes voisines
+        same = sorted([x for x in pages if x["type"] == typ and x["town"] != town], key=lambda x: (dist(town, x["town"]), x["town"]))[:9]
+        if same:
+            add.append(("links", "Autour de chez vous", f"{TYPE_LABEL[typ]} de climatisation dans les villes voisines",
+                        "Si vous êtes à la limite de deux communes, lisez aussi la page d’à côté.", [(gen2.fname(x), anchor_of(x)) for x in same]))
+        # 3) un autre service dans les 3 villes les plus proches
+        near_towns = []
+        for x in sorted(pages, key=lambda x: (dist(town, x["town"]), x["town"])):
+            if x["town"] != town and x["town"] not in near_towns: near_towns.append(x["town"])
+            if len(near_towns) == 3: break
+        cross = []
+        for nt in near_towns:
+            c = [x for x in pages if x["town"] == nt and x["type"] != typ]
+            if c: cross.append(c[k % len(c)])
+        if cross:
+            add.append(("links", "À côté", "D’autres besoins dans les communes voisines", "Chaque ville a ses pages.", [(gen2.fname(x), anchor_of(x)) for x in cross]))
+        # 4) services et guides
         add.append(("links", "Nos services", "Aller plus loin sur la climatisation",
-                    "Les pages du site qui complètent celle-ci : services, guides pratiques et devis.", sv + [a1, a2]))
+                    "Les pages du site qui complètent celle-ci : services, guides pratiques et devis.", SERV[:] + [ART[k % 5], ART[(k + 2) % 5]]))
+        blocks = list(t["blocks"]); pos = len(blocks) - 1
         t["blocks"] = blocks[:pos] + add + blocks[pos:]

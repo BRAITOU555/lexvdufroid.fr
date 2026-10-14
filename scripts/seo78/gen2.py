@@ -13,8 +13,18 @@ def e(s):
 def a(s):
     return html.escape(s, quote=True)
 
+PAGEFILES = set()
+RENAMED = {}
+
 def fname(t):
-    return t.get("file") or f"installation-climatisation-{t['slug']}.html"
+    typ = t.get("type", "installation")
+    return t.get("file") or f"{typ}-climatisation-{t.get('town', t['slug'])}.html"
+
+def resolve(h):
+    """Un lien interne vers une page qui n'existe pas (encore) est redirigé vers la page renommée de la même ville."""
+    if h.startswith("../") or h in PAGEFILES or not PAGEFILES:
+        return h
+    return RENAMED.get(h, h)
 
 def url(t):
     return f"{BASE}/zones/{fname(t)}"
@@ -163,7 +173,7 @@ FOOT = [("versailles", "Versailles"), ("saint-germain-en-laye", "Saint-Germain-e
 def page(t):
     n = t["name"]
     u = url(t)
-    near = ", ".join(f'<a href="{x[0]}">{e(x[1])}</a>' for x in t["near"])
+    near = ", ".join(f'<a href="{resolve(x[0])}">{e(x[1])}</a>' for x in t["near"])
     body = "\n\n".join(block(b, t) for b in t["blocks"])
     ic = t.get("card")
     card = ""
@@ -173,8 +183,8 @@ def page(t):
             {ul(ic[1], "")[:-5].replace('<ul class="">', '<ul>')}</ul>
             <a class="btn btn-red" href="../contact.html">{e(ic[2])}</a>
           </div>'''
-    foot1 = "".join(f'<li><a href="installation-climatisation-{s}.html">{e(x)}</a></li>' for s, x in FOOT[:4])
-    foot2 = "".join(f'<li><a href="installation-climatisation-{s}.html">{e(x)}</a></li>' for s, x in FOOT[4:])
+    foot1 = "".join(f'<li><a href="{resolve("installation-climatisation-" + s + ".html")}">{e(x)}</a></li>' for s, x in FOOT[:4])
+    foot2 = "".join(f'<li><a href="{resolve("installation-climatisation-" + s + ".html")}">{e(x)}</a></li>' for s, x in FOOT[4:])
     pts = "".join(f"<li>{e(p)}</li>" for p in t["points"])
     return f'''<!doctype html>
 <html lang="fr">
