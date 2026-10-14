@@ -1,0 +1,191 @@
+{
+ "towns": [
+  {
+   "name": "Saint-Cyr-l'École",
+   "slug": "saint-cyr-l-ecole"
+  },
+  {
+   "name": "Andrésy",
+   "slug": "andresy"
+  },
+  {
+   "name": "Croissy-sur-Seine",
+   "slug": "croissy-sur-seine"
+  },
+  {
+   "name": "Le Pecq",
+   "slug": "le-pecq"
+  },
+  {
+   "name": "Louveciennes",
+   "slug": "louveciennes"
+  },
+  {
+   "name": "Les Clayes-sous-Bois",
+   "slug": "les-clayes-sous-bois"
+  },
+  {
+   "name": "Mantes-la-Ville",
+   "slug": "mantes-la-ville"
+  },
+  {
+   "name": "Maurepas",
+   "slug": "maurepas"
+  },
+  {
+   "name": "Fontenay-le-Fleury",
+   "slug": "fontenay-le-fleury"
+  },
+  {
+   "name": "Bois-d'Arcy",
+   "slug": "bois-d-arcy"
+  },
+  {
+   "name": "Voisins-le-Bretonneux",
+   "slug": "voisins-le-bretonneux"
+  },
+  {
+   "name": "Chambourcy",
+   "slug": "chambourcy"
+  },
+  {
+   "name": "Triel-sur-Seine",
+   "slug": "triel-sur-seine"
+  },
+  {
+   "name": "Verneuil-sur-Seine",
+   "slug": "verneuil-sur-seine"
+  },
+  {
+   "name": "Bougival",
+   "slug": "bougival"
+  },
+  {
+   "name": "Carrières-sur-Seine",
+   "slug": "carrieres-sur-seine"
+  },
+  {
+   "name": "Carrières-sous-Poissy",
+   "slug": "carrieres-sous-poissy"
+  },
+  {
+   "name": "Achères",
+   "slug": "acheres"
+  },
+  {
+   "name": "Villennes-sur-Seine",
+   "slug": "villennes-sur-seine"
+  },
+  {
+   "name": "Orgeval",
+   "slug": "orgeval"
+  },
+  {
+   "name": "Vernouillet",
+   "slug": "vernouillet"
+  },
+  {
+   "name": "Aubergenville",
+   "slug": "aubergenville"
+  },
+  {
+   "name": "Épône",
+   "slug": "epone"
+  },
+  {
+   "name": "Magny-les-Hameaux",
+   "slug": "magny-les-hameaux"
+  },
+  {
+   "name": "Chevreuse",
+   "slug": "chevreuse"
+  },
+  {
+   "name": "La Verrière",
+   "slug": "la-verriere"
+  },
+  {
+   "name": "Coignières",
+   "slug": "coignieres"
+  },
+  {
+   "name": "Buc",
+   "slug": "buc"
+  },
+  {
+   "name": "Jouy-en-Josas",
+   "slug": "jouy-en-josas"
+  },
+  {
+   "name": "Saint-Nom-la-Bretèche",
+   "slug": "saint-nom-la-breteche"
+  },
+  {
+   "name": "Bailly",
+   "slug": "bailly"
+  },
+  {
+   "name": "Noisy-le-Roi",
+   "slug": "noisy-le-roi"
+  },
+  {
+   "name": "L'Étang-la-Ville",
+   "slug": "l-etang-la-ville"
+  },
+  {
+   "name": "Mareil-Marly",
+   "slug": "mareil-marly"
+  },
+  {
+   "name": "Montfort-l'Amaury",
+   "slug": "montfort-l-amaury"
+  },
+  {
+   "name": "Houdan",
+   "slug": "houdan"
+  }
+ ],
+ "angles": [
+  "remplacement d'un ancien climatiseur (dépose, reprise des liaisons)",
+  "chambre calme : clim silencieuse pour dormir",
+  "cabinet médical, profession libérale, petit bureau",
+  "commerce, boulangerie, restaurant : clim et production de chaleur",
+  "véranda ou extension : surfaces vitrées",
+  "multi-split : plusieurs chambres sur un seul groupe",
+  "pompe à chaleur air-air : chauffer l'hiver, bilan d'une saison",
+  "canicule : préparer la maison et que faire pendant les pics de chaleur",
+  "fluides frigorigènes : attestation de capacité, registre, ce que doit montrer un pro",
+  "contrat d'entretien annuel : ce qu'il couvre vraiment",
+  "pavillon des années 70 : isolation, combles et clim",
+  "résidence secondaire : mise en route et arrêt saisonnier",
+  "pilotage Wi-Fi, télécommande, programmation",
+  "qualité de l'air et allergies : filtres et nettoyage",
+  "déménagement : déposer et reposer une clim",
+  "personnes âgées et bébé : températures de confort et sécurité",
+  "clim et facture d'électricité : consommation réelle, mode éco, réglages",
+  "bruit : groupe extérieur, vibrations, supports anti-vibratoires",
+  "humidité et condensation : cave, salle de bain, évacuation",
+  "panne en pleine canicule : ce qu'on fait en urgence"
+ ],
+ "angles_used": [
+  "appartement ancien (Versailles)",
+  "prix et devis (Saint-Germain, Élancourt, Limay)",
+  "dépannage et réparation (Poissy, Les Mureaux)",
+  "devis et installateur (Mantes, Le Vésinet)",
+  "réversible et chauffage (Rambouillet, Marly, Chatou)",
+  "climatiseur mural (Le Chesnay)",
+  "installation en maison (Sartrouville, Houilles)",
+  "entretien (Conflans)",
+  "entreprise et pro (Vélizy)",
+  "dépannage + installation (Montigny)",
+  "monobloc (Maisons-Laffitte)",
+  "Daikin (Plaisir)",
+  "Mitsubishi (Chatou)",
+  "prêt à poser (Guyancourt)",
+  "appartement sans évacuation, mobile (Trappes)",
+  "nettoyage (La Celle-Saint-Cloud)",
+  "poseur de climatisation (Viroflay)",
+  "appareil acheté en magasin (Montesson)",
+  "voisinage et bruit en lotissement (Limay)"
+ ]
+}
