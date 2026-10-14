@@ -31,7 +31,7 @@
   padding: 42px 0 48px;
   background:
     linear-gradient(90deg, rgba(23, 26, 23, 0.96) 0%, rgba(23, 26, 23, 0.92) 52%, rgba(92, 122, 10, 0.72) 100%),
-    url("images/installation-clim-boutique-luxe.png") center / cover;
+    url("images/installation-clim-boutique-luxe.webp") center / cover;
 }
 
 .local-hero .lp-hero-split {
@@ -1333,7 +1333,7 @@ h1 {
 .zone-section {
   background:
     linear-gradient(90deg, rgba(23, 26, 23, 0.8), rgba(23, 26, 23, 0.5)),
-    url("images/agence-xv-du-froid-facade.png")
+    url("images/agence-xv-du-froid-facade.webp")
       center / cover;
 }
 
@@ -1934,7 +1934,7 @@ h1 {
     min-height: 430px;
     background:
       linear-gradient(90deg, rgba(23, 26, 23, 0.98), rgba(23, 26, 23, 0.76)),
-      url("images/depannage-clim-appartement.png")
+      url("images/depannage-clim-appartement.webp")
         center / cover;
   }
 
@@ -8805,3 +8805,9 @@ body {
     line-height: 1.48;
   }
 }
+
+.footer-yvelines{max-width:1180px;margin:0 auto;padding:18px 0 14px;border-top:1px solid rgba(255,255,255,.14)}
+.footer-yvelines h3{font-size:.95rem;margin:0 0 8px}
+.footer-yvelines p{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0;font-size:.85rem;line-height:1.5}
+.footer-yvelines a{color:inherit;opacity:.85;text-decoration:underline;text-underline-offset:2px}
+.footer-yvelines a:hover{opacity:1}
