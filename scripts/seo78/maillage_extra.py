@@ -15,4 +15,5 @@ EXTRA = [
  ("chambourcy", "saint-germain-en-laye", "Dépannage climatisation Chambourcy : la clim d’une véranda qui surchauffe"),
  ("triel-sur-seine", "poissy", "Dépannage climatisation Triel-sur-Seine : la clim qui s’arrête dans une maison près de la Seine"),
  ("verneuil-sur-seine", "les-mureaux", "Dépannage climatisation Verneuil-sur-Seine : reprendre une clim posée par un autre installateur"),
+ ("bougival", "louveciennes", "Dépannage climatisation Bougival : souffle faible, filtre et gaines dans une maison à étages"),
 ]
