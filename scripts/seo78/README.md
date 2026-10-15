@@ -30,3 +30,9 @@ Si WebSearch ne répond pas, créer la page avec des faits généraux. Si un pus
 - **urgence** : les premiers gestes avant l'arrivée, ce qui est urgent ou non, comment l'intervention se passe, ce qu'on peut promettre honnêtement (ne JAMAIS promettre « 24h/24 » ou un délai garanti sans que le client l'ait confirmé : écrire « nous faisons au plus vite, appelez le matin pour un créneau rapide »).
 - **installation** : repérage, choix du matériel, pose, copropriété, mise en service.
 Chaque page de la même ville doit être clairement différente des trois autres (angle, exemples, FAQ).
+
+## Contrôle de similarité
+`check.py` écarte les formules présentes sur 8 pages ou plus (téléphone, « devis clair avant travaux »…) puis exige moins de 6 % de ressemblance entre deux pages. Si une nouvelle page échoue : la RÉÉCRIRE (autres exemples, autre ordre, autres tournures), ne jamais renoncer ni baisser le seuil.
+
+## Ville nouvelle (pas dans l'anneau)
+Avant d'écrire, chercher sur internet (WebSearch) le code postal, les quartiers et les 3 à 5 communes voisines réelles, et ne citer que des lieux vérifiés. Ajouter la ville dans `maillage_extra.py` (voir plus haut).

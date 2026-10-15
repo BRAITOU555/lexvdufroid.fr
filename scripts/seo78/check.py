@@ -4,7 +4,7 @@ import sys, os, re, html, json, glob, itertools, unicodedata
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 import build, gen2
 R = gen2.REPO
-MAX_SIM = 0.08
+MAX_SIM = 0.06
 BANNED = ["il est important de noter", "n’hésitez pas", "n'hésitez pas", "dans le monde d", "incontournable", "véritable", "plongez", "découvrez", "en conclusion", "ainsi,", "fort de", "sur mesure", "clé en main", "à la pointe"]
 def norm(s):
     s = s.replace("²", "2").replace("’", "'")
@@ -33,6 +33,12 @@ for t in build.TOWNS:
         if not os.path.exists(os.path.normpath(os.path.join(os.path.dirname(f), h))): fails.append((t["slug"], "lien/image cassé", h))
     if not re.search(r'<h1[^>]*>', s) or len(t["title"]) > 95: fails.append((t["slug"], "titre trop long (>95) ou H1 absent", str(len(t["title"]))))
 G = {k: {tuple(w[i:i+4]) for i in range(len(w) - 3)} for k, w in W.items()}
+# Les formules communes à beaucoup de pages (téléphone, « devis clair avant travaux »…) sont du gabarit de site,
+# pas du contenu : on les écarte avant de mesurer la ressemblance entre deux pages.
+_df = {}
+for _g in G.values():
+    for _x in _g: _df[_x] = _df.get(_x, 0) + 1
+G = {k: {x for x in g if _df[x] < 8} for k, g in G.items()}
 worst = (0, "", "")
 for a, b in itertools.combinations(G, 2):
     j = len(G[a] & G[b]) / max(1, len(G[a] | G[b]))
