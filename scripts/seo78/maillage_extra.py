@@ -22,4 +22,5 @@ EXTRA = [
  ("villennes-sur-seine", "poissy", "Dépannage climatisation Villennes-sur-Seine : la clim qui givre, filtre, débit d’air et manque de fluide"),
  ("orgeval", "villennes-sur-seine", "Dépannage climatisation Orgeval : combles aménagés, unité sous rampant et mise en sécurité"),
  ("vernouillet", "verneuil-sur-seine", "Dépannage climatisation Vernouillet : clim gainable qui souffle peu, bouches et caisson"),
+ ("aubergenville", "les-mureaux", "Dépannage climatisation Aubergenville : petit local professionnel, bureau ou atelier qui ne peut pas attendre"),
 ]
