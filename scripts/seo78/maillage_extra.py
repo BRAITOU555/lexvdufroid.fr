@@ -17,4 +17,5 @@ EXTRA = [
  ("verneuil-sur-seine", "les-mureaux", "Dépannage climatisation Verneuil-sur-Seine : reprendre une clim posée par un autre installateur"),
  ("bougival", "louveciennes", "Dépannage climatisation Bougival : souffle faible, filtre et gaines dans une maison à étages"),
  ("carrieres-sur-seine", "montesson", "Dépannage climatisation Carrières-sur-Seine : groupe qui givre et vapeur en mode chauffage"),
+ ("carrieres-sous-poissy", "poissy", "Dépannage climatisation Carrières-sous-Poissy : panne sur une clim récente, garantie et premiers contrôles"),
 ]
