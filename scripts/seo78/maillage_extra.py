@@ -28,4 +28,5 @@ EXTRA = [
  ("chevreuse", "magny-les-hameaux", "Dépannage climatisation Chevreuse : gîte ou chambre d’hôtes, panne en plein séjour"),
  ("la-verriere", "maurepas", "Dépannage climatisation La Verrière : le bureau à domicile qui ne tient plus la température"),
  ("coignieres", "maurepas", "Dépannage climatisation Coignières : réserve, petit entrepôt et local de stockage trop chaud"),
+ ("buc", "velizy-villacoublay", "Dépannage climatisation Buc : maison arborée, feuilles et groupe extérieur étouffé"),
 ]
