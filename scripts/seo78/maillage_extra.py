@@ -31,4 +31,5 @@ EXTRA = [
  ("buc", "velizy-villacoublay", "Dépannage climatisation Buc : maison arborée, feuilles et groupe extérieur étouffé"),
  ("jouy-en-josas", "velizy-villacoublay", "Dépannage climatisation Jouy-en-Josas : vallée humide, condensation et évacuation lente"),
  ("saint-nom-la-breteche", "marly-le-roi", "Dépannage climatisation Saint-Nom-la-Bretèche : grande propriété, plusieurs unités et hameaux éloignés"),
+ ("bailly", "saint-cyr-l-ecole", "Dépannage climatisation Bailly : la clim qui ne repart pas après un orage ou une coupure de courant"),
 ]
