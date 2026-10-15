@@ -24,7 +24,7 @@ PAGES_ENTRETIEN_LA_VERRIERE = [dict(
     ("Bac et évacuation :", "nettoyés, test à l’eau pour s’assurer que rien ne stagne."),
     ("Réglages :", "contrôle de la consigne et de l’orientation des lames.")]),
   ("text", "Au quotidien", "Les gestes que vous pouvez faire entre deux visites",
-   ["Lavez le filtre une fois par mois en période d’usage. C’est simple : on le retire, on le passe sous l’eau tiède, on le laisse sécher à plat, on le remet. Ne le remettez jamais humide.",
+   ["Entre deux passages, un entretien clim la verriere se résume à un geste : laver le filtre une fois par mois en période d’usage. C’est simple : on le retire, on le passe sous l’eau tiède, on le laisse sécher à plat, on le remet. Ne le remettez jamais humide.",
     "Ne vaporisez aucun produit dans l’unité. Les sprays laissent des résidus qui finissent dans l’air soufflé. Si une odeur apparaît, c’est qu’il faut nettoyer le bac, pas parfumer l’appareil.",
     "Pour la nuit, évitez de diriger le souffle sur le lit. Orientez les lames vers le haut et choisissez le mode silencieux."]),
   ("photo", "controle-clim-interieure.png", "Technicien qui contrôle l’état du bac et de l’échangeur d’une climatisation dans une chambre à La Verrière", "Contrôle", "Le bac et l’échangeur, là où tout se joue",
