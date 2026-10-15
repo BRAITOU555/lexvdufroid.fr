@@ -18,4 +18,5 @@ EXTRA = [
  ("bougival", "louveciennes", "Dépannage climatisation Bougival : souffle faible, filtre et gaines dans une maison à étages"),
  ("carrieres-sur-seine", "montesson", "Dépannage climatisation Carrières-sur-Seine : groupe qui givre et vapeur en mode chauffage"),
  ("carrieres-sous-poissy", "poissy", "Dépannage climatisation Carrières-sous-Poissy : panne sur une clim récente, garantie et premiers contrôles"),
+ ("acheres", "poissy", "Dépannage climatisation Achères : groupe extérieur en lisière de forêt, feuilles, humidité et mousse"),
 ]
