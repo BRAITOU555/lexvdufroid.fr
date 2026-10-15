@@ -9,4 +9,5 @@ EXTRA = [
  ("les-clayes-sous-bois", "plaisir", "Dépannage climatisation Les Clayes-sous-Bois : la clim qui tourne sans jamais arrêter"),
  ("mantes-la-ville", "mantes-la-jolie", "Dépannage climatisation Mantes-la-Ville : la panne qui revient après une première réparation"),
  ("maurepas", "elancourt", "Dépannage climatisation Maurepas : le disjoncteur qui saute au démarrage de la clim"),
+ ("fontenay-le-fleury", "saint-cyr-l-ecole", "Dépannage climatisation Fontenay-le-Fleury : la clim qui démarre mal"),
 ]
