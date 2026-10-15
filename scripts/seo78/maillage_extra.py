@@ -16,4 +16,5 @@ EXTRA = [
  ("triel-sur-seine", "poissy", "Dépannage climatisation Triel-sur-Seine : la clim qui s’arrête dans une maison près de la Seine"),
  ("verneuil-sur-seine", "les-mureaux", "Dépannage climatisation Verneuil-sur-Seine : reprendre une clim posée par un autre installateur"),
  ("bougival", "louveciennes", "Dépannage climatisation Bougival : souffle faible, filtre et gaines dans une maison à étages"),
+ ("carrieres-sur-seine", "montesson", "Dépannage climatisation Carrières-sur-Seine : groupe qui givre et vapeur en mode chauffage"),
 ]
