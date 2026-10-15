@@ -4,4 +4,5 @@ EXTRA = [
  ("saint-cyr-l-ecole", "guyancourt", "Dépannage climatisation Saint-Cyr-l’École : copropriété, accès et syndic"),
  ("andresy", "conflans-sainte-honorine", "Dépannage climatisation Andrésy : climatiseur mobile ou monobloc"),
  ("croissy-sur-seine", "chatou", "Dépannage climatisation Croissy-sur-Seine : les pannes de juillet"),
+ ("le-pecq", "le-vesinet", "Dépannage climatisation Le Pecq : la clim qui ne repart pas après les vacances"),
 ]
