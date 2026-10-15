@@ -26,4 +26,5 @@ EXTRA = [
  ("epone", "aubergenville", "Dépannage climatisation Épône : maison avec animaux, filtre chargé de poils et évacuation bouchée"),
  ("magny-les-hameaux", "guyancourt", "Dépannage climatisation Magny-les-Hameaux : unité installée très haut, plafond de grande hauteur et accès difficile"),
  ("chevreuse", "magny-les-hameaux", "Dépannage climatisation Chevreuse : gîte ou chambre d’hôtes, panne en plein séjour"),
+ ("la-verriere", "maurepas", "Dépannage climatisation La Verrière : le bureau à domicile qui ne tient plus la température"),
 ]
