@@ -34,4 +34,5 @@ EXTRA = [
  ("bailly", "saint-cyr-l-ecole", "Dépannage climatisation Bailly : la clim qui ne repart pas après un orage ou une coupure de courant"),
  ("noisy-le-roi", "bailly", "Dépannage climatisation Noisy-le-Roi : appartement en résidence près de la gare, groupe sur balcon et accès au syndic"),
  ("l-etang-la-ville", "noisy-le-roi", "Dépannage climatisation L’Étang-la-Ville : bruits de claquement, sifflement et ronflement, quand couper l’appareil"),
+ ("mareil-marly", "marly-le-roi", "Dépannage climatisation Mareil-Marly : voyant qui clignote et code erreur, le lire avant d’appeler"),
 ]
