@@ -32,4 +32,5 @@ EXTRA = [
  ("jouy-en-josas", "velizy-villacoublay", "Dépannage climatisation Jouy-en-Josas : vallée humide, condensation et évacuation lente"),
  ("saint-nom-la-breteche", "marly-le-roi", "Dépannage climatisation Saint-Nom-la-Bretèche : grande propriété, plusieurs unités et hameaux éloignés"),
  ("bailly", "saint-cyr-l-ecole", "Dépannage climatisation Bailly : la clim qui ne repart pas après un orage ou une coupure de courant"),
+ ("noisy-le-roi", "bailly", "Dépannage climatisation Noisy-le-Roi : appartement en résidence près de la gare, groupe sur balcon et accès au syndic"),
 ]
