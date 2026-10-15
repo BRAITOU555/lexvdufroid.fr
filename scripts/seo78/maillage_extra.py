@@ -29,4 +29,5 @@ EXTRA = [
  ("la-verriere", "maurepas", "Dépannage climatisation La Verrière : le bureau à domicile qui ne tient plus la température"),
  ("coignieres", "maurepas", "Dépannage climatisation Coignières : réserve, petit entrepôt et local de stockage trop chaud"),
  ("buc", "velizy-villacoublay", "Dépannage climatisation Buc : maison arborée, feuilles et groupe extérieur étouffé"),
+ ("jouy-en-josas", "velizy-villacoublay", "Dépannage climatisation Jouy-en-Josas : vallée humide, condensation et évacuation lente"),
 ]
