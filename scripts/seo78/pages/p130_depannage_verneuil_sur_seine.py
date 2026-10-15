@@ -3,7 +3,7 @@ PAGES_DEPANNAGE_VERNEUIL = [dict(
  slug="depannage-verneuil-sur-seine", town="verneuil-sur-seine", type="depannage",
  anchor="Dépannage climatisation Verneuil-sur-Seine : reprendre une clim posée par un autre installateur",
  name="Verneuil-sur-Seine", cp="78480", crumb="Dépannage climatisation Verneuil-sur-Seine",
- title="Dépannage climatisation Verneuil-sur-Seine : clim posée par un autre installateur | Le XV du Froid",
+ title="Dépannage climatisation Verneuil-sur-Seine : clim posée par un tiers | Le XV du Froid",
  meta="Dépannage de climatisation à Verneuil-sur-Seine sur un appareil installé par quelqu’un d’autre : installateur parti ou injoignable, défauts de pose, liaisons, évacuation, ce qu’on contrôle avant de réparer.",
  h1="Dépannage climatisation Verneuil-sur-Seine : l’installateur ne répond plus, la clim ne fonctionne pas comme elle devrait.",
  eyebrow="Verneuil-sur-Seine · 78480 · appareil posé par un tiers",
