@@ -12,4 +12,5 @@ EXTRA = [
  ("fontenay-le-fleury", "saint-cyr-l-ecole", "Dépannage climatisation Fontenay-le-Fleury : la clim qui démarre mal"),
  ("bois-d-arcy", "fontenay-le-fleury", "Dépannage climatisation Bois-d’Arcy : la clim qui ne va plus depuis les travaux"),
  ("voisins-le-bretonneux", "montigny-le-bretonneux", "Dépannage climatisation Voisins-le-Bretonneux : le groupe qui se coupe en pleine chaleur"),
+ ("chambourcy", "saint-germain-en-laye", "Dépannage climatisation Chambourcy : la clim d’une véranda qui surchauffe"),
 ]
