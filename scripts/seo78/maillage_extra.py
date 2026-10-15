@@ -27,4 +27,5 @@ EXTRA = [
  ("magny-les-hameaux", "guyancourt", "Dépannage climatisation Magny-les-Hameaux : unité installée très haut, plafond de grande hauteur et accès difficile"),
  ("chevreuse", "magny-les-hameaux", "Dépannage climatisation Chevreuse : gîte ou chambre d’hôtes, panne en plein séjour"),
  ("la-verriere", "maurepas", "Dépannage climatisation La Verrière : le bureau à domicile qui ne tient plus la température"),
+ ("coignieres", "maurepas", "Dépannage climatisation Coignières : réserve, petit entrepôt et local de stockage trop chaud"),
 ]
