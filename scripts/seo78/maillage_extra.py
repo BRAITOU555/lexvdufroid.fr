@@ -7,4 +7,5 @@ EXTRA = [
  ("le-pecq", "le-vesinet", "Dépannage climatisation Le Pecq : la clim qui ne repart pas après les vacances"),
  ("louveciennes", "marly-le-roi", "Dépannage climatisation Louveciennes : maison ancienne en pierre, liaisons et groupe discret"),
  ("les-clayes-sous-bois", "plaisir", "Dépannage climatisation Les Clayes-sous-Bois : la clim qui tourne sans jamais arrêter"),
+ ("mantes-la-ville", "mantes-la-jolie", "Dépannage climatisation Mantes-la-Ville : la panne qui revient après une première réparation"),
 ]
