@@ -130,7 +130,8 @@ def publish():
                 lambda m: m.group(1) + items + m.group(3), z, count=1, flags=re.S)
     if z2 != z: open(zp, "w", encoding="utf-8").write(z2)
 
-    towns = [("climatisation-yvelines-78.html", "Climatisation Yvelines (78)")] + [(gen2.fname(t), maillage.anchor_of(t).split(" : ")[0]) for t in reps]
+    # Pied de page sobre : un seul lien vers le hub Yvelines (les villes restent listées dans zones.html et le hub)
+    towns = [("climatisation-yvelines-78.html", "Toutes nos zones d’intervention dans les Yvelines (78)")]
     n = 0
     for f in glob.glob(R + "/*.html") + glob.glob(R + "/articles/*.html") + glob.glob(R + "/zones/*.html"):
         t_ = open(f, encoding="utf-8").read()
