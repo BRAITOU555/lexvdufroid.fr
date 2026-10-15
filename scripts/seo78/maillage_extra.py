@@ -8,4 +8,5 @@ EXTRA = [
  ("louveciennes", "marly-le-roi", "Dépannage climatisation Louveciennes : maison ancienne en pierre, liaisons et groupe discret"),
  ("les-clayes-sous-bois", "plaisir", "Dépannage climatisation Les Clayes-sous-Bois : la clim qui tourne sans jamais arrêter"),
  ("mantes-la-ville", "mantes-la-jolie", "Dépannage climatisation Mantes-la-Ville : la panne qui revient après une première réparation"),
+ ("maurepas", "elancourt", "Dépannage climatisation Maurepas : le disjoncteur qui saute au démarrage de la clim"),
 ]
