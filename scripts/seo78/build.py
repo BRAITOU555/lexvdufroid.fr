@@ -80,7 +80,7 @@ def norm_kw_ok(t, k):
     n = k.lower().replace("-", " ")
     base = t["name"].lower().replace("-", " ").replace("’", " ").replace("'", " ")
     base = re.sub(r"[éèê]", "e", re.sub(r"[ô]", "o", base))
-    return n.endswith(base) and n.split(" ")[0] in ("climatisation", "installation", "depannage", "entretien", "devis", "pose", "nettoyage")
+    return n.endswith(base) and n.split(" ")[0] in ("climatisation", "installation", "depannage", "entretien", "devis", "pose", "nettoyage", "reparation", "urgence")
 errs = []
 for t in TOWNS:
     for k in t["kw"]:
