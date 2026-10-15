@@ -24,4 +24,5 @@ EXTRA = [
  ("vernouillet", "verneuil-sur-seine", "Dépannage climatisation Vernouillet : clim gainable qui souffle peu, bouches et caisson"),
  ("aubergenville", "les-mureaux", "Dépannage climatisation Aubergenville : petit local professionnel, bureau ou atelier qui ne peut pas attendre"),
  ("epone", "aubergenville", "Dépannage climatisation Épône : maison avec animaux, filtre chargé de poils et évacuation bouchée"),
+ ("magny-les-hameaux", "guyancourt", "Dépannage climatisation Magny-les-Hameaux : unité installée très haut, plafond de grande hauteur et accès difficile"),
 ]
