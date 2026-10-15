@@ -6,4 +6,5 @@ EXTRA = [
  ("croissy-sur-seine", "chatou", "Dépannage climatisation Croissy-sur-Seine : les pannes de juillet"),
  ("le-pecq", "le-vesinet", "Dépannage climatisation Le Pecq : la clim qui ne repart pas après les vacances"),
  ("louveciennes", "marly-le-roi", "Dépannage climatisation Louveciennes : maison ancienne en pierre, liaisons et groupe discret"),
+ ("les-clayes-sous-bois", "plaisir", "Dépannage climatisation Les Clayes-sous-Bois : la clim qui tourne sans jamais arrêter"),
 ]
