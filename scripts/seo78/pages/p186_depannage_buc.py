@@ -20,7 +20,7 @@ PAGES_DEPANNAGE_BUC = [dict(
     "Allez voir le groupe quand il est à l’arrêt : si vous distinguez un tapis de feuilles, de mousse ou de toiles d’araignée sur la grille, vous tenez une bonne piste. Ne passez pas le jet d’un nettoyeur à haute pression sur les ailettes, elles se plient comme du papier."]),
   ("photo", "depannage-clim-appartement.png", "Technicien qui dégage les ailettes d’un groupe extérieur de climatisation dans un jardin de Buc", "Sur place", "Ce qu’on fait devant le groupe",
    ["On coupe l’alimentation, on retire la grille et on dégage les gros débris à la main. Puis on brosse les ailettes dans le sens de la lame et on rince à basse pression avec un produit adapté, en protégeant le moteur.",
-    "Pour toute réparation climatisation buc, on mesure ensuite les pressions et l’intensité absorbée. Cela montre si le compresseur a souffert d’avoir forcé ou si tout est rentré dans l’ordre."],
+    "Pour toute réparation climatisation Buc, on mesure ensuite les pressions et l’intensité absorbée. Cela montre si le compresseur a souffert d’avoir forcé ou si tout est rentré dans l’ordre."],
    ["Alimentation coupée avant tout démontage", "Ailettes redressées si elles sont couchées", "Pressions et intensité relevées", "Essai de plusieurs minutes avant de partir"], True),
   ("text", "Autour de l’appareil", "L’environnement du groupe compte autant que l’appareil",
    ["Un groupe doit respirer sur ses côtés : comptez au moins une cinquantaine de centimètres autour. Une haie plantée trop près, un auvent ajouté après coup ou un tas de bois rangé contre lui changent la donne.",
