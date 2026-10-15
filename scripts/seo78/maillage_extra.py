@@ -36,4 +36,5 @@ EXTRA = [
  ("l-etang-la-ville", "noisy-le-roi", "Dépannage climatisation L’Étang-la-Ville : bruits de claquement, sifflement et ronflement, quand couper l’appareil"),
  ("mareil-marly", "marly-le-roi", "Dépannage climatisation Mareil-Marly : voyant qui clignote et code erreur, le lire avant d’appeler"),
  ("montfort-l-amaury", "plaisir", "Dépannage climatisation Montfort-l’Amaury : la clim qui disjoncte dans une maison ancienne"),
+ ("houdan", "montfort-l-amaury", "Dépannage climatisation Houdan : panne découverte au retour du travail"),
 ]
